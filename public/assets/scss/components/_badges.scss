@@ -1,0 +1,41 @@
+/*********************************
+/*  Badges Design End
+*********************************/
+.badge {
+    font-family: var(--font-default);
+    font-weight: var(--font-regular);
+    font-size: 10px;
+    line-height: 10px;
+    color: var(--color-heading);
+    background: var(--color-bg);
+    border-radius: 30px;
+    padding: 5px 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    text-transform: capitalize;
+
+    &-warning {
+        background: rgba(var(--color-yellow-rgb), 0.1);
+        color: var(--color-yellow);
+    }
+
+    &-success {
+        background: rgba(var(--color-green-rgb), 0.1);
+        color: var(--color-green);
+    }
+
+    &-danger {
+        background: rgba(var(--color-danger-rgb), 0.1);
+        color: var(--color-danger);
+    }
+
+    &-purple {
+        background: rgba(var(--color-purple-rgb), 0.1);
+        color: var(--color-purple);
+    }
+}
+
+/*********************************
+/*  Badges Design End
+*********************************/

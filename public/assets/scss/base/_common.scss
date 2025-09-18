@@ -1,0 +1,135 @@
+/*********************************
+/*  Common Css Start
+*********************************/
+.text-white {
+  color: var(--color-white) !important;
+}
+
+.text-heading {
+  color: var(--color-heading) !important;
+}
+
+.text-content {
+  color: var(--color-content) !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--color-border) !important;
+}
+
+.border-top {
+  border-top: 1px solid var(--color-border) !important;
+}
+
+.border-right {
+  border-right: 1px solid var(--color-border) !important;
+}
+
+.border-left {
+  border-left: 1px solid var(--color-border) !important;
+}
+
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+.text-red {
+  color: var(--color-red) !important;
+}
+
+.bg-purple {
+  background: var(--color-purple) !important;
+}
+
+.bg-color {
+  background: var(--color-bg) !important;
+}
+
+.disable {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+button {
+
+  &:hover,
+  &:focus {
+    outline: 0px;
+  }
+}
+
+/*********************************
+/*  Input Apperance Start
+*********************************/
+input[type='number']::-webkit-inner-spin-button,
+input[type='search']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield !important;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 2px;
+  // -webkit-filter: invert(1);
+  // filter: invert(1);
+}
+
+/*********************************
+/*  Input Apperance End
+*********************************/
+
+/*********************************
+/*  Custom Scroll Bar Css
+*********************************/
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: var(--radius);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(var(--color-primary-rgb), 0.8);
+}
+
+/*********************************
+/*  Custom Scroll Bar Css
+*********************************/
+
+/*********************************
+/*  Custom Container
+*********************************/
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/*********************************
+/*  Heading Typography
+*********************************/
+h1 {
+  font-family: var(--font-default);
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: var(--font-bold);
+  color: var(--color-heading);
+}
+
+/*********************************
+/*  Content Typography
+*********************************/
+p {
+  font-family: var(--font-default);
+  font-size: 16px;
+  font-weight: var(--font-regular);
+  line-height: 24px;
+  color: var(--color-content);
+}

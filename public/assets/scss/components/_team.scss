@@ -1,0 +1,196 @@
+/*********************************
+/* Team Card Start
+*********************************/
+.teamCard {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-20);
+    padding: 20px;
+
+    @include respond(phone-sm) {
+        padding: 20px 15px;
+    }
+
+    &__thumb {
+        img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: block;
+            object-fit: cover;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        .icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            @include flexbox-center;
+            border: 1px solid var(--color-border);
+            margin: auto;
+            margin-bottom: 10px;
+
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 50px;
+            }
+        }
+    }
+
+    &__content {
+        margin-top: 10px;
+
+        .title {
+            font-weight: var(--font-semibold);
+            font-size: 20px;
+            line-height: 26px;
+            color: var(--color-heading);
+            text-transform: capitalize;
+            display: block;
+            margin: 0;
+        }
+
+        .info__item {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 16px;
+
+            a {
+                font-weight: var(--font-regular);
+                font-size: 14px;
+                line-height: 14px;
+                color: var(--color-content);
+                border-right: 1px solid var(--color-border);
+                padding-right: 10px;
+                display: block;
+                transition: var(--transition);
+
+                &:hover {
+                    color: var(--color-primary);
+                }
+
+                &:last-of-type {
+                    border-radius: none;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .agent {
+        font-weight: var(--font-medium);
+        font-size: 14px;
+        line-height: 14px;
+        color: var(--color-heading);
+        margin-top: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        .sg-btn {
+            font-weight: var(--font-medium);
+            font-size: 14px;
+            line-height: 14px;
+            border-radius: 30px;
+            padding: 6px 13px;
+            color: var(--color-content);
+            border: 1px solid var(--color-border);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            &.active {
+                color: var(--color-primary);
+                border-color: rgba(var(--color-primary-rgb), 0.2);
+            }
+
+            .close {
+                width: 16px;
+                height: 16px;
+                border: 1px solid var(--color-primary);
+                border-radius: 50%;
+                color: var(--color-primary);
+                @include flexbox-center;
+                cursor: pointer;
+                transition: var(--transition);
+
+                svg {
+                    width: 10px;
+                    height: 10px;
+                }
+
+                &:hover {
+                    color: var(--color-danger);
+                    border-color: var(--color-danger);
+                }
+            }
+        }
+    }
+
+    &__footer {
+        @include flexbox-between;
+        gap: 16px;
+        margin-top: 40px;
+
+        .btn__group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .sg-btn {
+            font-size: 14px;
+            line-height: 14px;
+            color: var(--color-content);
+            padding: 10px 14px;
+            border-radius: 10px;
+
+            svg {
+                width: 16px;
+                height: auto;
+            }
+
+            &:focus,
+            &:hover {
+                color: var(--color-white);
+                background: var(--color-primary);
+                border-color: var(--color-primary);
+            }
+
+            &-outline {
+                &-border {
+                    color: var(--color-content);
+                    background: transparent;
+                    border: 1px solid var(--color-border);
+
+                    &:focus,
+                    &:hover {
+                        color: var(--color-content);
+                        background: transparent;
+                        border: 1px solid var(--color-border);
+                    }
+                }
+
+                &-danger {
+                    color: var(--color-danger);
+                    background: rgba(var(--color-danger-rgb), 0.06);
+                    border: 1px solid rgba(var(--color-danger-rgb), 0.5);
+
+                    &:focus,
+                    &:hover {
+                        color: var(--color-danger);
+                        background: rgba(var(--color-danger-rgb), 0.06);
+                        border: 1px solid rgba(var(--color-danger-rgb), 0.5);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*********************************
+/* Team Card End
+*********************************/

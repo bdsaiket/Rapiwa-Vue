@@ -1,0 +1,68 @@
+/*********************************
+/*  Breadcrumb Design Start
+*********************************/
+.breadcrumb {
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px 34px;
+
+        li {
+            position: relative;
+            font-family: var(--font-default);
+            font-weight: var(--font-regular);
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--color-heading);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-transform: capitalize;
+
+            svg {
+                width: 16px;
+                height: 16px;
+                color: var(--color-heading);
+            }
+
+            a {
+                color: var(--color-content);
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                transition: var(--transition);
+
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+
+            &::after {
+                content: ">";
+                position: absolute;
+                right: -24px;
+                width: 14px;
+                height: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--color-content);
+                top: 54%;
+                transform: translateY(-50%);
+            }
+
+            &:last-of-type {
+                &::after {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}
+
+/*********************************
+/*  Breadcrumb Design End
+*********************************/

@@ -1,0 +1,38 @@
+:root {
+  --font-default: 'Instrument Sans', sans-serif;
+  // Color Start
+  --color-black: #000000;
+  --color-black-rgb: 0, 0, 0;
+  --color-white: #ffffff;
+  --color-white-rgb: 255, 255, 255;
+  --color-primary: #349878;
+  --color-primary-rgb: 52, 152, 120;
+  --color-bg: #fafafa;
+  --color-heading: #1c1c1c;
+  --color-heading2: #333333;
+  --color-content: #666666;
+  --color-border: #eeeeee;
+  --color-green: #349878;
+  --color-green-rgb: 52, 152, 120;
+  --color-danger: #f24545;
+  --color-danger-rgb: 242, 69, 69;
+  --color-purple: #5856d6;
+  --color-purple-rgb: 88, 86, 214;
+  --color-yellow: #ff7b00;
+  --color-yellow-rgb: 255, 123, 0;
+
+  // Font Weight
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+
+  // Shadow
+  --radius: 12px;
+  --radius-20: 20px;
+  --shadow: 0px 8px 24px rgba(27, 46, 94, 0.08);
+  --transition: all 300ms ease-in-out;
+}

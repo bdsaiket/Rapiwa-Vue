@@ -1,0 +1,152 @@
+/*********************************
+/*  Dashboard Layouts Start
+*********************************/
+.layout__page {
+	padding: 30px 0;
+}
+
+/*********************************
+/*  Dashboard Layouts Start
+*********************************/
+
+/*********************************
+/*  Dashboard Banner Start
+*********************************/
+.banner__wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 16px;
+}
+
+/* Greetting Card Start */
+.greeting__card {
+	position: relative;
+	grid-row: span 2;
+	padding: 22px;
+	border-radius: var(--radius-20);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		background: rgba(var(--color-black-rgb), 0.1);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		backdrop-filter: blur(10px);
+		z-index: -1;
+	}
+
+	.title {
+		font-weight: var(--font-bold);
+		font-size: 26px;
+		line-height: 40px;
+		color: var(--color-white);
+		text-transform: capitalize;
+		display: block;
+		margin-bottom: 20px;
+
+		@include respond (phone) {
+			font-size: 24px;
+			line-height: 36px;
+		}
+
+	}
+
+	.link {
+		font-weight: var(--font-bold);
+		font-size: 12px;
+		line-height: 20px;
+		color: var(--color-white);
+		text-transform: capitalize;
+		display: block;
+	}
+
+	.manage__btn {
+		font-weight: var(--font-medium);
+		font-size: 14px;
+		line-height: 14px;
+		color: var(--color-white);
+		padding: 13px;
+		border-radius: 10px;
+		background: rgba(var(--color-white-rgb), 0.1);
+		display: block;
+		text-align: center;
+	}
+
+}
+
+/* Metric Card Start */
+.metric__card {
+	background: var(--color-bg);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-20);
+	padding: 20px;
+	position: relative;
+
+	.icon {
+		font-size: 13px;
+		width: 44px;
+		height: 44px;
+		@include flexbox-center;
+		background: var(--color-white);
+		border: 1px solid var(--color-border);
+		color: var(--color-heading);
+		border-radius: 50%;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+
+		svg {
+			width: 16px;
+			height: 16px;
+		}
+	}
+
+	.content {
+		.title {
+			font-weight: var(--font-medium);
+			font-size: 16px;
+			line-height: 24px;
+			color: var(--color-heading);
+			margin-bottom: 16px;
+		}
+
+		.value {
+			font-weight: var(--font-bold);
+			font-size: 32px;
+			line-height: 36px;
+			color: var(--color-heading);
+			margin: 0;
+			display: block;
+
+			@include respond (phone) {
+				font-size: 28px;
+				line-height: 32px;
+			}
+		}
+
+		.note {
+			font-weight: var(--font-medium);
+			font-size: 14px;
+			line-height: 20px;
+			color: var(--color-heading);
+			display: block;
+			margin-top: 20px;
+		}
+	}
+
+}
+
+/*********************************
+/*  Dashboard Banner Start
+*********************************/

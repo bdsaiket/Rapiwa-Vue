@@ -1,0 +1,157 @@
+/*********************************
+/*  Modal Area Start
+*********************************/
+.custom__modal {
+  .modal {
+    &-dialog {
+      max-width: 905px;
+      margin: 0 auto;
+    }
+    &-content {
+      padding: 30px;
+      border-radius: 20px;
+      background-color: var(--color-white);
+      border: none;
+      margin: 10px;
+    }
+    &__header {
+      @include flexbox-between;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--color-border);
+
+      .title {
+        font-weight: var(--font-medium);
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--color-heading);
+        margin: 0;
+      }
+      .btn__close {
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--color-heading);
+        width: 30px;
+        height: 30px;
+        border-radius: var(--radius);
+        background-color: var(--color-white);
+        @include flexbox-center;
+        border: 1px solid var(--color-border);
+        outline: none;
+        transition: var(--transition);
+
+        &:hover {
+          background-color: var(--color-red);
+          border-color: var(--color-red);
+          color: var(--color-white);
+        }
+      }
+    }
+    &__footer {
+      padding-top: 16px;
+
+      .btn__group {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 12px;
+      }
+    }
+  }
+}
+/*********************************
+/*  Modal Area End
+*********************************/
+
+/*********************************
+/*  Customer Inform Start
+*********************************/
+.customer__information {
+  background: var(--color-bg);
+  padding: 20px;
+  border-radius: 16px;
+  .title {
+    font-weight: var(--font-regular);
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--color-heading);
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .list__item {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+
+    li {
+      font-weight: var(--font-regular);
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--color-content);
+      margin-bottom: 6px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+/*********************************
+/*  Customer Inform End
+*********************************/
+
+/*********************************
+/*  Order Invoice Start
+*********************************/
+.invoice-summary {
+  max-width: 350px;
+  margin-left: auto;
+  padding-bottom: 20px;
+
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    td {
+      font-size: 16px;
+      padding: 4px 0;
+
+      &:first-child {
+        text-align: right;
+        padding-right: 10px;
+        color: var(--color-content);
+        white-space: nowrap;
+      }
+
+      &:last-child {
+        text-align: right;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .net-payable {
+    font-weight: 400;
+    font-size: 20px;
+
+    border-top: 1px dashed var(--color-border);
+    padding-top: 10px;
+    margin-top: 10px;
+    text-align: right;
+    color: var(--color-content);
+    span {
+      margin-right: 10px;
+    }
+
+    strong {
+      color: var(--color-black);
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}
+
+/*********************************
+/*  Order Invoice End
+*********************************/

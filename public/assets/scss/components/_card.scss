@@ -1,0 +1,276 @@
+/*********************************
+/*  Card Design Start
+*********************************/
+.card {
+    background: var(--color-white);
+    border-radius: var(--radius-20);
+    border: 1px solid var(--color-border);
+    padding: 16px 20px;
+
+    &__header {
+        @include flexbox-between;
+        gap: 15px 10px;
+        margin-bottom: 16px;
+
+        .title {
+            font-weight: var(--font-semibold);
+            font-size: 16px;
+            line-height: 20px;
+            color: var(--color-heading);
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0;
+        }
+
+        p,
+        span,
+        .desc {
+            font-weight: var(--font-medium);
+            font-size: 12px;
+            line-height: 20px;
+            color: var(--color-heading);
+            margin-bottom: 0;
+
+        }
+
+        select {
+            font-weight: var(--font-medium);
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--color-heading);
+            background: transparent;
+            padding: 6px 10px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            outline: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &__body {
+        margin-bottom: 16px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+select {
+    font-weight: var(--font-medium);
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-heading);
+    background: transparent;
+    padding: 11px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+    outline: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+/*********************************
+/*  Card Design End
+*********************************/
+
+/*********************************
+/*  Message Card Design
+*********************************/
+.message__card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 16px;
+    margin-bottom: 14px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .card {
+        &__content {
+            display: flex;
+            gap: 10px;
+
+            .icon {
+                height: 44px;
+                width: 44px;
+                border-radius: 50%;
+                color: var(--color-primary);
+                background: rgba(var(--color-primary-rgb), 0.06);
+                @include flexbox-center;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit: cover;
+                }
+
+                svg {
+                    width: 17px;
+                    height: 17px;
+                }
+            }
+        }
+
+        &__details {
+            flex: 1;
+
+            .top__row {
+                @include flexbox-between;
+                align-items: flex-start;
+                gap: 15px 10px;
+
+                .content {
+                    flex: 1;
+
+                    @include respond (phone-sm) {
+                        flex: auto;
+                    }
+                }
+            }
+
+            .title {
+                font-weight: var(--font-medium);
+                font-size: 16px;
+                line-height: 20px;
+                color: var(--color-heading);
+                margin: 0;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .time {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                color: var(--color-heading);
+                display: inline-block;
+            }
+
+            .message {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: var(--color-content);
+                display: block;
+                margin-top: 10px;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+
+            }
+
+            .from__info {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: var(--color-heading);
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-top: 12px;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 6px;
+                    list-style: none;
+
+                    &:not(:first-child)::before {
+                        content: "";
+                        height: 4px;
+                        width: 4px;
+                        background: var(--color-heading);
+                        border-radius: 50%;
+                        font-size: 20px;
+                        line-height: 0;
+                        color: var(--color-heading);
+                    }
+
+                    span {
+                        color: var(--color-content);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.status__area {
+    border-top: 1px solid var(--color-border);
+    padding: 18px 0 18px 12px;
+    @include flexbox-between;
+    align-items: flex-start;
+    gap: 5px 10px;
+
+    .title {
+        font-weight: var(--font-medium);
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--color-heading);
+        margin: 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: -12px;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+    }
+
+    .message {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: var(--color-content);
+        display: block;
+        margin-top: 8px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
+
+    .time {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: var(--color-heading);
+        display: inline-block;
+    }
+
+
+    .status {
+        &__content {}
+    }
+}
+
+/*********************************
+/*  Message Card Design
+*********************************/
