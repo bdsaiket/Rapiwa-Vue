@@ -29,7 +29,7 @@
 				</router-link>
 			</li>
 			<li class="menu__item">
-				<router-link :to="{ name: 'chat-ai-agent' }" class="menu__link">
+				<router-link :to="{ name: 'train-ai-agent' }" class="menu__link">
 					<span class="menu__icon">
 						<HugeiconsIcon :icon="RoboticIcon" />
 					</span>

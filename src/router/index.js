@@ -56,17 +56,17 @@ const routes = [
         },
       },
       {
-        path: '/chat-ai-agent',
-        name: 'chat-ai-agent',
+        path: '/train-ai-agent',
+        name: 'train-ai-agent',
         component: () => import('@/views/dashboard/ai/TrainAiAgent.vue'),
         meta: {
-          breadcrumb: 'Chat Ai Agent',
+          breadcrumb: 'Train Ai Agent',
         },
       },
       {
         path: '/create-ai-agent',
         name: 'create-ai-agent',
-        component: () => import('@/views/dashboard/device/CreateAiAgent.vue'),
+        component: () => import('@/views/dashboard/ai/CreateAiAgent.vue'),
         meta: {
           breadcrumb: 'Create Ai Agent',
         },
