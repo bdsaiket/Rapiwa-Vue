@@ -13,7 +13,7 @@
 				<span class="header__text">Menu</span>
 			</li>
 			<li class="menu__item">
-				<router-link :to="{ name: 'dashboard' }" class="menu__link ">
+				<router-link :to="{ name: 'dashboard' }" class="menu__link">
 					<span class="menu__icon">
 						<HugeiconsIcon :icon="DashboardCircleIcon" />
 					</span>
@@ -61,7 +61,7 @@
 				</router-link>
 			</li>
 			<li class="menu__item">
-				<router-link to="/" class="menu__link" data-bs-toggle="collapse" data-bs-target="#setting">
+				<router-link to="/subscription" class="menu__link" data-bs-toggle="collapse" data-bs-target="#setting">
 					<span class="menu__icon">
 						<HugeiconsIcon :icon="Settings01Icon" />
 					</span>
@@ -79,7 +79,7 @@
 				</ul>
 			</li>
 			<li class="menu__item">
-				<router-link to="/subscription" class="menu__link">
+				<router-link to="/" class="menu__link">
 					<span class="menu__icon">
 						<HugeiconsIcon :icon="Diamond02Icon" />
 					</span>
@@ -119,5 +119,14 @@
 </template>
 
 <script setup>
-import { DashboardCircleIcon, WhatsappIcon, RoboticIcon, UserMultiple03Icon, Ticket01Icon, Settings01Icon, Diamond02Icon, ArrowDown01Icon } from '@hugeicons/core-free-icons'
+import {
+	DashboardCircleIcon,
+	WhatsappIcon,
+	RoboticIcon,
+	UserMultiple03Icon,
+	Ticket01Icon,
+	Settings01Icon,
+	Diamond02Icon,
+	ArrowDown01Icon,
+} from '@hugeicons/core-free-icons'
 </script>
