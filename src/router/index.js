@@ -56,11 +56,11 @@ const routes = [
         },
       },
       {
-        path: '/train-ai-agent',
-        name: 'train-ai-agent',
-        component: () => import('@/views/dashboard/ai/TrainAiAgent.vue'),
+        path: '/ai-agent',
+        name: 'ai-agent',
+        component: () => import('@/views/dashboard/ai/AiAgent.vue'),
         meta: {
-          breadcrumb: 'Train Ai Agent',
+          breadcrumb: 'Ai Agent',
         },
       },
       {
@@ -69,6 +69,14 @@ const routes = [
         component: () => import('@/views/dashboard/ai/CreateAiAgent.vue'),
         meta: {
           breadcrumb: 'Create Ai Agent',
+        },
+      },
+      {
+        path: '/train-ai-agent',
+        name: 'train-ai-agent',
+        component: () => import('@/views/dashboard/ai/TrainAiAgent.vue'),
+        meta: {
+          breadcrumb: 'Train Ai Agent',
         },
       },
       {

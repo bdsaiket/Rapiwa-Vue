@@ -61,7 +61,7 @@ import SectionTitle from '@/components/SectionTitle.vue'
 // BreadCrumb Data
 const BreadcrumbItems = ref([
   { icon: DashboardCircleIcon, title: 'Dashboard', to: '/dashboard' },
-  { icon: '', title: 'Train AI Agent', to: '/train-ai-agent' },
+  { icon: '', title: 'AI Agent', to: '/ai-agent' },
   { icon: '', title: 'Create AI Agent' },
 ])
 
@@ -69,7 +69,7 @@ const BreadcrumbItems = ref([
 const SectionTitleData = ref([
   {
     icon: ArrowLeft02Icon,
-    to: '/train-ai-agent',
+    to: '/ai-agent',
     title: 'Create AI Agent',
     desc: '',
     button_link: '',
