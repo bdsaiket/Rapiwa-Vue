@@ -58,6 +58,7 @@
       margin-bottom: 0;
     }
   }
+
   .number-tag {
     display: inline-flex;
     align-items: center;
@@ -76,6 +77,7 @@
       font-size: 5px;
       transition: var(--transition);
       color: var(--color-content);
+
       &:hover {
         color: var(--color-danger);
         border-color: var(--color-danger);
@@ -288,8 +290,7 @@ select {
   }
 
   .status {
-    &__content {
-    }
+    &__content {}
   }
 }
 

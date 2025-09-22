@@ -54,6 +54,123 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="pricing__inner">
+                                <!-- Pricing Card -->
+                                <div class="pricing__card-wrapper">
+                                    <!-- Pricing card -->
+                                    <div class="pricing__card">
+                                        <h3 class="plan__title">Basic</h3>
+                                        <p class="plan__subtitle">Start with the Basic Plan</p>
+                                        <div class="badge">$5.00 per device</div>
+
+                                        <div class="price__section">
+                                            <span class="price">$5</span>
+                                            <span class="per-month">/Monthly</span>
+                                            <!-- <span class="original-price">$9.00</span> -->
+                                        </div>
+                                        <div class="plan__btn">
+                                            <router-link to="" class="sg-btn w-100">Upgrade Plan</router-link>
+                                        </div>
+                                        <div class="feature__list">
+                                            <ul class="list-item">
+                                                <li>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <div class="icon">
+                                                            <HugeiconsIcon :icon="Tick02Icon" />
+                                                        </div>
+                                                        Number Limit
+                                                    </div>
+                                                    <span>1</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Pricing card -->
+                                    <div class="pricing__card">
+                                        <h3 class="plan__title">Pro</h3>
+                                        <p class="plan__subtitle">It’s little starting</p>
+                                        <div class="badge">$4.00 per device</div>
+
+                                        <div class="price__section">
+                                            <span class="price">$12</span>
+                                            <span class="per-month">/Monthly</span>
+                                            <!-- <span class="original-price">$9.00</span> -->
+                                        </div>
+                                        <div class="plan__btn">
+                                            <router-link to="" class="sg-btn w-100">Upgrade Plan</router-link>
+                                        </div>
+                                        <div class="feature__list">
+                                            <ul class="list-item">
+                                                <li>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <div class="icon">
+                                                            <HugeiconsIcon :icon="Tick02Icon" />
+                                                        </div>
+                                                        Number Limit
+                                                    </div>
+                                                    <span>3</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Pricing card -->
+                                    <div class="pricing__card">
+                                        <h3 class="plan__title">Plus</h3>
+                                        <p class="plan__subtitle">Most Popular</p>
+                                        <div class="badge">$3.60 per device</div>
+
+                                        <div class="price__section">
+                                            <span class="price">$18</span>
+                                            <span class="per-month">/Monthly</span>
+                                            <!-- <span class="original-price">$9.00</span> -->
+                                        </div>
+                                        <div class="plan__btn">
+                                            <router-link to="" class="sg-btn w-100">Upgrade Plan</router-link>
+                                        </div>
+                                        <div class="feature__list">
+                                            <ul class="list-item">
+                                                <li>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <div class="icon">
+                                                            <HugeiconsIcon :icon="Tick02Icon" />
+                                                        </div>
+                                                        Number Limit
+                                                    </div>
+                                                    <span>5</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Pricing card -->
+                                    <div class="pricing__card">
+                                        <h3 class="plan__title">Enterprise</h3>
+                                        <p class="plan__subtitle">Go big deal</p>
+                                        <div class="badge">$3.50 per device</div>
+
+                                        <div class="price__section">
+                                            <span class="price">$35</span>
+                                            <span class="per-month">/Monthly</span>
+                                            <!-- <span class="original-price">$9.00</span> -->
+                                        </div>
+                                        <div class="plan__btn">
+                                            <router-link to="" class="sg-btn w-100">Upgrade Plan</router-link>
+                                        </div>
+                                        <div class="feature__list">
+                                            <ul class="list-item">
+                                                <li>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <div class="icon">
+                                                            <HugeiconsIcon :icon="Tick02Icon" />
+                                                        </div>
+                                                        Number Limit
+                                                    </div>
+                                                    <span>10</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-content" id="quarterly">
                             tab quarterly
@@ -92,7 +209,7 @@
 import { ref } from "vue";
 import Breadcrumb from '@/components/Breadcrumb.vue';
 import SectionTitle from "@/components/SectionTitle.vue";
-import { DashboardCircleIcon, Diamond02Icon } from '@hugeicons/core-free-icons'
+import { DashboardCircleIcon, Tick02Icon } from '@hugeicons/core-free-icons'
 
 // BreadCrumb Data
 const BreadcrumbItems = ref([
