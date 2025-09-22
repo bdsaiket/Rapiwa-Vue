@@ -190,6 +190,9 @@
 /*  Layout Container End
 *********************************/
 
+/*********************************
+/*  Agent Sidebar Start
+*********************************/
 .agent-sidebar {
   .sidebar-menu {
     list-style: none;
@@ -207,7 +210,7 @@
         border-radius: 8px;
         transition: all 0.2s ease-in-out;
         text-decoration: none;
-		font-weight: 400;
+        font-weight: 400;
       }
 
       .nav-link:hover {
@@ -224,3 +227,6 @@
     }
   }
 }
+/*********************************
+/*  Agent Sidebar End
+*********************************/
