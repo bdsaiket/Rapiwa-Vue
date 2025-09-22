@@ -25,6 +25,360 @@
         }
     }
 }
+
 /*********************************
 /*  Tabs Design End
+*********************************/
+
+/*********************************
+/*  Pricing Table Start
+*********************************/
+.pricing__tabs {
+    .tab__wrapper {
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        gap: 16px;
+        margin-bottom: 60px;
+
+        @media (max-width: 991px) {
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+
+        .tab__buttons {
+            display: flex;
+            align-items: center;
+            border: 1px solid var(--color-border);
+            background: var(--color-white);
+            border-radius: 16px;
+            padding: 8px 10px;
+
+            @include respond(phone) {
+                flex-wrap: wrap;
+                // border-radius: 10px;
+            }
+
+            .ai,
+            .tab__link {
+                font-weight: var(--font-medium);
+                font-size: 13px;
+                line-height: 30px;
+                padding: 3px 14px;
+                border: none;
+                outline: none;
+                border-radius: 10px;
+                background: none;
+                color: var(--color-content);
+                cursor: pointer;
+                min-width: 90px;
+                white-space: nowrap;
+                // width: 100%;
+
+                &.active {
+                    background: var(--color-heading2);
+                    color: var(--color-white);
+                }
+            }
+
+            &.with__ai {
+                border: 1px solid #67147c;
+                padding: 0;
+                padding-right: 10px;
+
+                @include respond(phone) {
+                    padding: 10px;
+                }
+
+                .tab__link {
+                    padding: 11px 14px;
+                    line-height: 14px;
+                    // border-radius: 0;
+                }
+
+                .ai {
+                    background: linear-gradient(103.08deg, #525AB7 10.26%, #67147C 80.43%);
+                    color: var(--color-white);
+                    padding: 11px 14px;
+                    // border-radius: 100px 0 0 100px;
+                    border-radius: 14.5px 0 0 14.5px;
+                    margin-right: 10px;
+                    line-height: 30px;
+
+                    @include respond(phone) {
+                        border-radius: 100px;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+
+        .divider {
+            font-weight: var(--font-bold);
+            font-size: 16px;
+            line-height: 30px;
+            color: var(--color-heading2);
+        }
+    }
+
+    .tab__content-wrapper {
+        .tab-content {
+            // display: none;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffffcc;
+
+            &.active {
+                display: block;
+            }
+        }
+
+        .pricing__trail {
+            background: #ffffff0a;
+            border-radius: 16px;
+            padding: 24px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 30px;
+
+            @media (max-width: 767px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .left__area {
+                .title {
+                    font-family: Instrument Sans;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #fff;
+                    margin-bottom: 7px;
+                }
+
+                p {
+                    font-family: Instrument Sans;
+                    font-weight: 400;
+                    font-size: 16px;
+                    leading-trim: NONE;
+                    line-height: 24px;
+                    color: #ffffffcc;
+                    margin: 0;
+                }
+
+                .trail {
+                    font-family: Instrument Sans;
+                    font-weight: 600;
+                    font-style: SemiBold;
+                    font-size: 12px;
+                    line-height: 16px;
+                    padding: 5px 10px;
+                    background: #24d366;
+                    color: #fff;
+                    border-radius: 100px;
+                    margin-top: 16px;
+                    display: inline-block;
+                }
+            }
+        }
+
+        .sg-btn {
+            font-family: Instrument Sans;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            background: #ffffff0a;
+            color: #fff;
+            transition: all 300ms ease-in-out;
+            padding: 10px 16px;
+            border: none;
+            outline: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            text-transform: capitalize;
+            border-radius: 8px;
+            text-decoration: none;
+
+            i {
+                font-size: 18px;
+            }
+
+            &:hover {
+                background: #24d366;
+                color: #fff;
+            }
+        }
+
+        .list-item {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                font-family: Instrument Sans;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #ffffffcc;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+    }
+
+    .pricing__card-wrapper {
+        // margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .pricing__card {
+        background: #ffffff0a;
+        border: 1px solid transparent;
+        padding: 24px 30px;
+        border-radius: 16px;
+        // max-width: 315px;
+        min-height: 400px;
+        height: 100%;
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+            background: #24d3660f;
+            border: 1px solid #24d36680;
+
+            .sg-btn {
+                background: #24d366;
+                color: #fff;
+            }
+        }
+
+        .plan__title {
+            font-family: Instrument Sans;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: #fff;
+            display: block;
+            margin-bottom: 7px;
+        }
+
+        .plan__subtitle {
+            font-family: Instrument Sans;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffffcc;
+            margin: 0;
+        }
+
+        .badge {
+            font-family: Instrument Sans;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #24d366;
+            background: #24d3661a;
+            padding: 5px 10px;
+            border-radius: 100px;
+            margin-top: 16px;
+            display: inline-block;
+        }
+
+        .price__section {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            margin-top: 16px;
+
+            .price {
+                font-family: Instrument Sans;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 40px;
+                color: #fff;
+            }
+
+            .per-month {
+                font-family: Instrument Sans;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #ffffff99;
+            }
+
+            .original-price {
+                font-family: Instrument Sans;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                text-decoration: line-through;
+                color: #fff;
+                display: inline-block;
+            }
+        }
+
+        hr {
+            background: #ffffff0a;
+            height: 1px;
+            width: 100%;
+            margin: 30px 0;
+        }
+
+        .feature__list {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 15px;
+
+            .list-item {
+                height: 100%;
+                min-height: 70px;
+
+                li {
+                    margin-bottom: 14px;
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .plan__includes {
+        background: #ffffff0a;
+        border-radius: 16px;
+        padding: 30px;
+        margin-top: 40px;
+
+        .plan-title {
+            font-family: Instrument Sans;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 20px;
+            padding-bottom: 16px;
+            display: block;
+            border-bottom: 1px solid #ffffff0a;
+            color: #fff;
+        }
+
+        .list-item {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px 24px;
+        }
+    }
+}
+
+/*********************************
+/*  Pricing Table Start
 *********************************/

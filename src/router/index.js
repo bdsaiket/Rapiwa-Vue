@@ -79,10 +79,11 @@ const routes = [
           breadcrumb: 'Train Ai Agent',
         },
       },
+      // Device Routing Start
       {
         path: '/subscription', // Note: No leading slash for child paths
         name: 'subscription',
-        component: () => import('@/views/dashboard/Subscription.vue'),
+        component: () => import('@/views/dashboard/subscription/Subscription.vue'),
         meta: {
           breadcrumb: 'Subscription',
         },

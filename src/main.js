@@ -23,7 +23,7 @@ import { QuillEditor } from '@vueup/vue-quill'
 import '@vueup/vue-quill/dist/vue-quill.snow.css'
 
 // Custom Styles
-import '../public/assets/scss/style.css'
+import '../public/assets/css/style.css'
 
 // Create the Vue app
 const app = createApp(App)

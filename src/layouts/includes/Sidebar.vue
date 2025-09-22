@@ -79,7 +79,7 @@
 				</ul>
 			</li>
 			<li class="menu__item">
-				<router-link to="/" class="menu__link">
+				<router-link to="/subscription" class="menu__link">
 					<span class="menu__icon">
 						<HugeiconsIcon :icon="Diamond02Icon" />
 					</span>

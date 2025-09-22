@@ -157,6 +157,7 @@
 
 <script setup>
 import { ref } from "vue";
+// import { DeviceList } from '@/data/createagentData.js'
 import { DashboardCircleIcon, Edit03Icon, Delete02Icon, Settings02Icon, Alert01Icon, Cancel01Icon } from '@hugeicons/core-free-icons'
 import Breadcrumb from '@/components/Breadcrumb.vue';
 import SectionTitle from "@/components/SectionTitle.vue";
