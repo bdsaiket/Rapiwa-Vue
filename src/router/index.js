@@ -71,14 +71,35 @@ const routes = [
           breadcrumb: 'Create Ai Agent',
         },
       },
+
       {
         path: '/train-ai-agent',
-        name: 'train-ai-agent',
+        redirect: '/train-ai-agent',
         component: () => import('@/views/dashboard/ai/TrainAiAgent.vue'),
         meta: {
           breadcrumb: 'Train Ai Agent',
         },
+        children: [
+          {
+            path: '/train-ai-agent', // Note: No leading slash for child paths
+            name: 'train-ai-agent',
+            component: () => import('@/views/dashboard/ai/component/Dashboard.vue'),
+            meta: {
+              breadcrumb: 'Ai Dashboard',
+            },
+          },
+
+          {
+            path: '/train-ai-agent/pdf', // Note: No leading slash for child paths
+            name: 'train-ai-agent-pdf',
+            component: () => import('@/views/dashboard/ai/component/Pdf.vue'),
+            meta: {
+              breadcrumb: 'PDF',
+            },
+          },
+        ],
       },
+
       // Device Routing Start
       {
         path: '/subscription', // Note: No leading slash for child paths
