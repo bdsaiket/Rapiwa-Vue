@@ -54,13 +54,34 @@
       </div>
     </div>
     <div class="card__body">
-   
+      <div class="file__item" v-for="items in PdfData" :key="items.id">
+        <div class="title__area flex-1">
+          <h5 class="title">{{ items.id }}. {{ items.title }}</h5>
+        </div>
+        <div class="all__badge">
+          <div v-if="items.status === 'Recommended'" class="badge badge-gray">
+            {{ items.status }}
+          </div>
+        </div>
+        <div class="d-flex align-items-center flex-wrap justify-content-between gap-4">
+          <span class="text"> {{ items.date }}</span>
+          <span class="text"> {{ items.email }}</span>
+          <div class="action__btn">
+            <div class="form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="session" checked />
+            </div>
+            <button type="button" class="button delete">
+              <HugeiconsIcon :icon="Delete02Icon" />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import {
   WhatsappIcon,
   Txt01Icon,
@@ -68,6 +89,8 @@ import {
   Brain03Icon,
   ShoppingBag01Icon,
   CustomerSupportIcon,
+  Delete02Icon,
+  Edit03Icon,
 } from '@hugeicons/core-free-icons'
 
 // Metric Card Data
@@ -103,4 +126,32 @@ const MetricCardData = ref([
     value: '3',
   },
 ])
+// PdfData
+
+const PdfData = ref([
+  {
+    id: '1',
+    title: 'gpt-5-2025-08-12:personal:cjkcdaaas ...',
+    status: 'Recommended',
+    date: '10-9-2025 5:02:30',
+    email: 'user-imanjajncdjndmn...',
+  },
+  {
+    id: '1',
+    title: 'gpt-5-2025-08-12:personal:cjkcdaaas ...',
+    // status: 'Recommended',
+    date: '10-9-2025 5:02:30',
+    email: 'user-imanjajncdjndmn...',
+  },
+])
+
+// // Pagination Logic
+// const perPage = ref(5)
+// const currentPage = ref(1)
+
+// const paginatedPdfData = computed(() => {
+//   const start = (currentPage.value - 1) * perPage.value
+//   const end = start + perPage.value
+//   return PdfData.value.slice(start, end)
+// })
 </script>
