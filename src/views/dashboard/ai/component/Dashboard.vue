@@ -45,7 +45,7 @@
       </ul>
     </div>
   </div>
-  <div class="card px-20 py-20 radius-16">
+  <div class="card px-20 py-20 radius-16 mt-20">
     <div class="card__header">
       <h4 class="title">Trained model</h4>
       <div class="form-check form__checkbox">
