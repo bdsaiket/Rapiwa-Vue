@@ -26,7 +26,7 @@
                         Unknown Status
                     </div>
                 </div>
-                <span></span>
+
                 <div class="action__btn">
                     <router-link to="" class="button">
                         <HugeiconsIcon :icon="Edit03Icon" />

@@ -15,57 +15,54 @@
 				<SectionTitle :items="SectionTitleData[0]" />
 			</div>
 			<div class="col-12">
-				<div class="row gy-3">
+				<div class="row ">
 					<div class="col-lg-3">
-						<div class="agent-sidebar">
-							<ul class="nav flex-column sidebar-menu">
-								<li class="nav-item">
-									<router-link :to="{ name: 'train-ai-agent' }" class="nav-link active"> Dashboard
+						<div class="agent__sidebar">
+							<ul class="nav flex-column sidebar__menu">
+								<li>
+									<router-link :to="{ name: 'train-ai-agent' }">
+										Dashboard
 									</router-link>
 								</li>
-								<li class="nav-item">
-									<router-link :to="{ name: 'train-ai-agent-pdf' }" class="nav-link"> PDF
+								<li>
+									<router-link :to="{ name: 'train-ai-agent-pdf' }">
+										PDF
 									</router-link>
 								</li>
-								<li class="nav-item">
-									<router-link to="/pdf" class="nav-link"> Text File </router-link>
+								<li>
+									<router-link to="/pdf">Text File</router-link>
 								</li>
-								<li class="nav-item">
-									<router-link to="/faq" class="nav-link"> FAQ </router-link>
+								<li>
+									<router-link to="/faq">FAQ</router-link>
 								</li>
-								<li class="nav-item">
-									<router-link to="/knowledge-base" class="nav-link"> Knowledge Base </router-link>
+								<li>
+									<router-link to="/knowledge-base">Knowledge Base</router-link>
 								</li>
-								<li class="nav-item">
-									<router-link to="/product" class="nav-link"> Product </router-link>
+								<li>
+									<router-link to="/product">Product</router-link>
 								</li>
-								<li class="nav-item">
-									<router-link to="/service" class="nav-link"> Service </router-link>
+								<li>
+									<router-link to="/service">Service</router-link>
 								</li>
-								<li class="nav-item">
-									<router-link to="/company-info" class="nav-link"> Company Info </router-link>
+								<li>
+									<router-link to="/company-info">Company Info</router-link>
 								</li>
-								<li class="nav-item">
-									<router-link to="/open-ai-configure" class="nav-link">
+								<li>
+									<router-link to="/open-ai-configure">
 										Open AI Configure
 									</router-link>
 								</li>
 							</ul>
 						</div>
 					</div>
-
-
-
-
-
 					<div class="col-lg-9">
 						<router-view></router-view>
 					</div>
-					<div class="col-12">
+					<!-- <div class="col-12">
 						<div class="btn__group">
 							<button type="submit" class="sg-btn sg-btn-dark radius-10 fw-medium">Confirm</button>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>

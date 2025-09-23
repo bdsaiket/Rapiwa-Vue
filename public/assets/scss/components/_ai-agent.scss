@@ -1,0 +1,107 @@
+/*********************************
+/*  Agent Sidebar Start
+*********************************/
+.agent__sidebar {
+    max-width: 167px;
+
+    .sidebar__menu {
+        list-style: none;
+        gap: 4px;
+
+        li {
+            a {
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: var(--font-regular);
+                color: var(--color-heading2);
+                display: block;
+                padding: 5px 12px;
+                border-radius: 8px;
+                background: var(--color-white);
+                border: 1px solid var(--color-white);
+                // transition: var(--transition);
+
+                &.router-link-exact-active {
+                    border-color: var(--color-border);
+                    background: var(--color-bg);
+                }
+            }
+        }
+    }
+}
+
+/*********************************
+/*  Agent Sidebar End
+*********************************/
+
+/*********************************
+/*  File Item Start
+*********************************/
+.file__item {
+    background: var(--color-white);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    @include flexbox-between;
+    gap: 15px;
+    margin-bottom: 10px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .title__area {
+        // flex: 1;
+        max-width: 220px;
+        width: 100%;
+
+        .title {
+            font-weight: var(--font-regular);
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--color-content);
+            text-transform: capitalize;
+            display: block;
+            margin: 0;
+        }
+    }
+
+    .all__badge {
+        flex: 1;
+        text-align: center;
+    }
+
+    .action__btn {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 8px;
+        flex: 1;
+
+        .button {
+            font-size: 14px;
+            color: var(--color-content);
+            width: 40px;
+            height: 40px;
+            background: var(--color-bg);
+            @include flexbox-center;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+
+            svg {
+                width: 16px;
+                height: auto;
+            }
+        }
+
+        .delete {
+            background: rgba(var(--color-danger-rgb), 0.06);
+            color: var(--color-danger);
+        }
+    }
+}
+
+/*********************************
+/*  File Item End
+*********************************/
