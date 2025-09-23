@@ -16,7 +16,7 @@
 			</div>
 			<div class="col-12">
 				<div class="row ">
-					<div class="col-lg-3">
+					<div class="col-lg-2">
 						<div class="agent__sidebar">
 							<ul class="nav flex-column sidebar__menu">
 								<li>
@@ -55,7 +55,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-9">
+					<div class="col-lg-10">
 						<router-view></router-view>
 					</div>
 					<!-- <div class="col-12">

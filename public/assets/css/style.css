@@ -5376,11 +5376,9 @@ label .required {
 .file__item .title__area {
   max-width: 220px;
   width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .file__item .title__area .title {
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

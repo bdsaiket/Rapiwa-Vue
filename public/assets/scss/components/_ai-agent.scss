@@ -43,6 +43,7 @@
   padding: 10px 10px 10px 15px;
   border: 1px solid var(--color-border);
   @include flexbox-between;
+
   gap: 10px;
   margin-bottom: 10px;
 
@@ -51,14 +52,13 @@
   }
 
   .title__area {
-    // flex: 1;
     max-width: 220px;
     width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+   
 
     .title {
+    //   max-width: 220px;
+      width: 100%;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;

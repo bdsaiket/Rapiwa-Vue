@@ -58,22 +58,22 @@
         <div class="title__area flex-1">
           <h5 class="title">{{ items.id }}. {{ items.title }}</h5>
         </div>
-        <div class="all__badge">
+        <div class="all__badge text-sm-center text-start">
           <div v-if="items.status === 'Recommended'" class="badge badge-gray">
             {{ items.status }}
           </div>
         </div>
-        <div class="d-flex align-items-center flex-wrap justify-content-between gap-4">
+        <div class="d-flex align-items-center flex-wrap justify-content-between gap-lg-4 gap-2">
           <span class="text"> {{ items.date }}</span>
           <span class="text"> {{ items.email }}</span>
-          <div class="action__btn">
-            <div class="form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="session" checked />
-            </div>
-            <button type="button" class="button delete">
-              <HugeiconsIcon :icon="Delete02Icon" />
-            </button>
+        </div>
+        <div class="action__btn">
+          <div class="form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="session" checked />
           </div>
+          <button type="button" class="button delete">
+            <HugeiconsIcon :icon="Delete02Icon" />
+          </button>
         </div>
       </div>
     </div>
@@ -131,7 +131,7 @@ const MetricCardData = ref([
 const PdfData = ref([
   {
     id: '1',
-    title: 'gpt-5-2025-08-12:personal:cjkcdaaas ...',
+    title: 'gpt-5-2025-08-12:person ...',
     status: 'Recommended',
     date: '10-9-2025 5:02:30',
     email: 'user-imanjajncdjndmn...',
