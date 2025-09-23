@@ -81,7 +81,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import {
   WhatsappIcon,
   Txt01Icon,
@@ -90,7 +90,6 @@ import {
   ShoppingBag01Icon,
   CustomerSupportIcon,
   Delete02Icon,
-  Edit03Icon,
 } from '@hugeicons/core-free-icons'
 
 // Metric Card Data
@@ -145,13 +144,4 @@ const PdfData = ref([
   },
 ])
 
-// // Pagination Logic
-// const perPage = ref(5)
-// const currentPage = ref(1)
-
-// const paginatedPdfData = computed(() => {
-//   const start = (currentPage.value - 1) * perPage.value
-//   const end = start + perPage.value
-//   return PdfData.value.slice(start, end)
-// })
 </script>

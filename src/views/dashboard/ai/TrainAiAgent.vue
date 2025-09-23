@@ -58,11 +58,6 @@
 					<div class="col-lg-10">
 						<router-view></router-view>
 					</div>
-					<!-- <div class="col-12">
-						<div class="btn__group">
-							<button type="submit" class="sg-btn sg-btn-dark radius-10 fw-medium">Confirm</button>
-						</div>
-					</div> -->
 				</div>
 			</div>
 		</div>
