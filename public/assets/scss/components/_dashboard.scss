@@ -112,7 +112,23 @@
 		}
 	}
 
-	.content {
+	.icon2 {
+		font-size: 13px;
+		width: 44px;
+		height: 44px;
+		@include flexbox-center;
+		background: var(--color-white);
+		border: 1px solid var(--color-border);
+		color: var(--color-heading);
+		border-radius: 50%;
+
+		svg {
+			width: 16px;
+			height: 16px;
+		}
+	}
+
+
 		.title {
 			font-weight: var(--font-medium);
 			font-size: 16px;
@@ -143,7 +159,7 @@
 			display: block;
 			margin-top: 20px;
 		}
-	}
+
 
 }
 
