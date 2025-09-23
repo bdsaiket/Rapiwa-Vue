@@ -15,7 +15,7 @@
 				<SectionTitle :items="SectionTitleData[0]" />
 			</div>
 			<div class="col-12">
-				<div class="row ">
+				<div class="row g-3">
 					<div class="col-lg-2">
 						<div class="agent__sidebar">
 							<ul class="nav flex-column sidebar__menu">
