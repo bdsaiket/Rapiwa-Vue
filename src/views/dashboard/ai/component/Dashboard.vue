@@ -98,7 +98,7 @@ const MetricCardData = ref([
   {
     icon: WhatsappIcon,
     title: 'PDF',
-    value: '1',
+    value: '5',
   },
   {
     icon: Txt01Icon,
@@ -108,7 +108,7 @@ const MetricCardData = ref([
   {
     icon: HelpCircleIcon,
     title: 'FAQ',
-    value: '1',
+    value: '0',
   },
   {
     icon: Brain03Icon,
