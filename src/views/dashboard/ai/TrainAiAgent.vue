@@ -33,7 +33,7 @@
 									<router-link :to="{ name: 'train-ai-agent-text-file' }">Text File</router-link>
 								</li>
 								<li>
-									<router-link to="/faq">FAQ</router-link>
+									<router-link :to="{ name: 'train-ai-agent-faq' }">FAQ</router-link>
 								</li>
 								<li>
 									<router-link to="/knowledge-base">Knowledge Base</router-link>
@@ -89,5 +89,4 @@ const SectionTitleData = ref([
 		badge: 'Last Train: 1 days ago',
 	},
 ])
-
 </script>

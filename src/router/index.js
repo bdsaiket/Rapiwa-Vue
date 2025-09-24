@@ -181,6 +181,39 @@ const routes = [
               breadcrumbTitle: 'Open AI Configure',
             },
           },
+          // FAQ Routing Start
+          {
+            path: '/train-ai-agent/faq', // Note: No leading slash for child paths
+            name: 'train-ai-agent-faq',
+            component: () => import('@/views/dashboard/ai/component/Faq.vue'),
+            meta: {
+              breadcrumbTitle: 'FAQ',
+            },
+          },
+          {
+            path: '/train-ai-agent/faq/add-faq', // Note: No leading slash for child paths
+            name: 'train-ai-agent-add-faq',
+            component: () => import('@/views/dashboard/ai/component/faq/AddFaq.vue'),
+            meta: {
+              breadcrumbTitle: 'Add FAQ',
+            },
+          },
+          {
+            path: '/train-ai-agent/faq/edit-faq', // Note: No leading slash for child paths
+            name: 'train-ai-agent-edit-faq',
+            component: () => import('@/views/dashboard/ai/component/faq/EditFaq.vue'),
+            meta: {
+              breadcrumbTitle: 'Edit FAQ',
+            },
+          },
+          {
+            path: '/train-ai-agent/faq/view-faq', // Note: No leading slash for child paths
+            name: 'train-ai-agent-view-faq',
+            component: () => import('@/views/dashboard/ai/component/faq/ViewFaq.vue'),
+            meta: {
+              breadcrumbTitle: 'View FAQ',
+            },
+          },
         ],
       },
 

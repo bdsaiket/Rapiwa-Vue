@@ -26,10 +26,10 @@
                   <router-link :to="{ name: 'train-ai-agent-pdf' }"> PDF </router-link>
                 </li>
                 <li>
-                  <router-link to="/pdf">Text File</router-link>
+                  <router-link :to="{ name: 'train-ai-agent-text-file' }">Text File</router-link>
                 </li>
                 <li>
-                  <router-link to="/faq">FAQ</router-link>
+                  <router-link :to="{ name: 'train-ai-agent-faq' }"> FAQ </router-link>
                 </li>
                 <li>
                   <router-link to="/knowledge-base">Knowledge Base</router-link>
@@ -50,7 +50,7 @@
             </div>
           </div>
           <div class="col-lg-10">
-            <div class="card px-20 py-20 radius-16 ">
+            <div class="card px-20 py-20 radius-16">
               <div class="card__header pb-3 mb-3 border-bottom">
                 <router-link :to="{ name: 'train-ai-agent' }" class="title">
                   <HugeiconsIcon :icon="ArrowLeft02Icon" />Source Data for training
