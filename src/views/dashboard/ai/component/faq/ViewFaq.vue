@@ -23,43 +23,8 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { HugeiconsIcon } from '@hugeicons/vue'
 import { ArrowLeft02Icon } from '@hugeicons/core-free-icons'
-
-// FaqData
-const FaqData = ref([
-  {
-    id: '1',
-    question: 'Question: What is SpaGreen Creative?',
-    answer: 'SpaGreen Creative is a top software company in Bangladesh ...',
-  },
-  {
-    id: '2',
-    question: 'Question: How can you growth your digital business?',
-    answer: 'SpaGreen Creative is a top software company in Bangladesh ...',
-  },
-  {
-    id: '3',
-    question: 'Question: Which solution provide SpaGreen Creative?',
-    answer: 'SpaGreen Creative is a top software company in Bangladesh ...',
-  },
-  {
-    id: '4',
-    question: 'Question: What is delivery time after project engaged?',
-    answer: 'SpaGreen Creative is a top software company in Bangladesh ...',
-  },
-  {
-    id: '5',
-    question: 'Question: How expert Spagreen Creative team? ',
-    answer: 'SpaGreen Creative is a top software company in Bangladesh ...',
-  },
-  {
-    id: '6',
-    question: 'Question: How expert Spagreen Creative team? ',
-    answer: 'SpaGreen Creative is a top software company in Bangladesh ...',
-  },
-])
-
 
 </script>
