@@ -15,8 +15,8 @@
 				<SectionTitle :items="SectionTitleData[0]" />
 			</div>
 			<div class="col-12">
-				<div class="row ">
-					<div class="col-lg-3">
+				<div class="row g-3">
+					<div class="col-lg-2">
 						<div class="agent__sidebar">
 							<ul class="nav flex-column sidebar__menu">
 								<li>
@@ -55,14 +55,9 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-9">
+					<div class="col-lg-10">
 						<router-view></router-view>
 					</div>
-					<!-- <div class="col-12">
-						<div class="btn__group">
-							<button type="submit" class="sg-btn sg-btn-dark radius-10 fw-medium">Confirm</button>
-						</div>
-					</div> -->
 				</div>
 			</div>
 		</div>
@@ -77,30 +72,22 @@ import SectionTitle from '@/components/SectionTitle.vue'
 
 // BreadCrumb Data
 const BreadcrumbItems = ref([
-	{ icon: DashboardCircleIcon, title: 'Dashboard', to: '/dashboard' },
-	{ icon: '', title: 'AI Agents', to: '/ai-agent' },
-	{ icon: '', title: 'Train AI Agent' },
+  { icon: DashboardCircleIcon, title: 'Dashboard', to: '/dashboard' },
+  { icon: '', title: 'AI Agents', to: '/ai-agent' },
+  { icon: '', title: 'Train AI Agent' },
 ])
 
 // Section Title Data
 const SectionTitleData = ref([
-	{
-		icon: ArrowLeft02Icon,
-		to: '/ai-agent',
-		title: 'SpaGreen Sales Agent',
-		desc: 'Train AI Agent Model with your knowledge base & predefined replies content for more accurate response',
-		button_link: 'create-ai-agent',
-		button_text: 'Train & Fine-Tuning',
-		badge: 'Last Train: 1 days ago',
-	},
+  {
+    icon: ArrowLeft02Icon,
+    to: '/ai-agent',
+    title: 'SpaGreen Sales Agent',
+    desc: 'Train AI Agent Model with your knowledge base & predefined replies content for more accurate response',
+    button_link: 'train-fine-tuning',
+    button_text: 'Train & Fine-Tuning',
+    badge: 'Last Train: 1 days ago',
+  },
 ])
 
-// Dropdown Login
-const selected = ref(null)
-
-const SelectAgent = ref([
-	{ label: 'Sales Agent', value: 'sales_agent' },
-	{ label: 'Telegram', value: 'telegram' },
-	{ label: 'Facebook', value: 'facebook' },
-])
 </script>
