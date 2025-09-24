@@ -50,7 +50,7 @@
             </div>
           </div>
           <div class="col-lg-10">
-            <div class="card px-20 py-20 radius-16 mt-20">
+            <div class="card px-20 py-20 radius-16 ">
               <div class="card__header pb-3 mb-3 border-bottom">
                 <router-link :to="{ name: 'train-ai-agent' }" class="title">
                   <HugeiconsIcon :icon="ArrowLeft02Icon" />Source Data for training
