@@ -71,6 +71,14 @@ const routes = [
           breadcrumb: 'Create Ai Agent',
         },
       },
+      {
+        path: '/train-fine-tuning',
+        name: 'train-fine-tuning',
+        component: () => import('@/views/dashboard/ai/component/TrainFineTuning.vue'),
+        meta: {
+          breadcrumb: 'Train & Fine-Tuning',
+        },
+      },
 
       {
         path: '/train-ai-agent',

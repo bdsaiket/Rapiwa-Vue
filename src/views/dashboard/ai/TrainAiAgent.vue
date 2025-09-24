@@ -84,18 +84,10 @@ const SectionTitleData = ref([
     to: '/ai-agent',
     title: 'SpaGreen Sales Agent',
     desc: 'Train AI Agent Model with your knowledge base & predefined replies content for more accurate response',
-    button_link: 'create-ai-agent',
+    button_link: 'train-fine-tuning',
     button_text: 'Train & Fine-Tuning',
     badge: 'Last Train: 1 days ago',
   },
 ])
 
-// Dropdown Login
-const selected = ref(null)
-
-const SelectAgent = ref([
-  { label: 'Sales Agent', value: 'sales_agent' },
-  { label: 'Telegram', value: 'telegram' },
-  { label: 'Facebook', value: 'facebook' },
-])
 </script>
