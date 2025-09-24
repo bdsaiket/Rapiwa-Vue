@@ -60,8 +60,9 @@
 					<span class="menu__text">Settings</span>
 				</router-link>
 			</li>
-			<li class="menu__item">
-				<router-link to="/subscription" class="menu__link" data-bs-toggle="collapse" data-bs-target="#setting">
+			<!-- <li class="menu__item">
+				<router-link :to="{ name: 'subscription' }" class="menu__link" data-bs-toggle="collapse"
+					data-bs-target="#setting">
 					<span class="menu__icon">
 						<HugeiconsIcon :icon="Settings01Icon" />
 					</span>
@@ -77,9 +78,9 @@
 					<li><router-link to="">Setting Three</router-link></li>
 					<li><router-link to="">Setting Four</router-link></li>
 				</ul>
-			</li>
+			</li> -->
 			<li class="menu__item">
-				<router-link to="/" class="menu__link">
+				<router-link :to="{ name: 'subscription' }" class="menu__link">
 					<span class="menu__icon">
 						<HugeiconsIcon :icon="Diamond02Icon" />
 					</span>

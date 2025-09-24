@@ -4463,7 +4463,7 @@ select:focus {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 10px 34px;
+  gap: 10px;
 }
 .breadcrumb__list li {
   position: relative;
@@ -4484,7 +4484,7 @@ select:focus {
 .breadcrumb__list li svg {
   width: 16px;
   height: 16px;
-  color: var(--color-heading);
+  color: var(--color-content);
 }
 .breadcrumb__list li a {
   color: var(--color-content);
@@ -4501,28 +4501,11 @@ select:focus {
 .breadcrumb__list li a:hover {
   color: var(--color-primary);
 }
-.breadcrumb__list li::after {
-  content: '>';
-  position: absolute;
-  right: -24px;
-  width: 14px;
-  height: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: var(--color-content);
-  top: 54%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.breadcrumb__list li:last-of-type::after {
+.breadcrumb__list li a svg {
   display: none;
+}
+.breadcrumb__list li:first-of-type a svg {
+  display: block;
 }
 
 /*********************************
@@ -5164,71 +5147,19 @@ label .required {
 /*********************************
 /*  File Upload Start
 *********************************/
-.file__control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 10px;
-}
-.file__control .form-control {
+.upload__preview {
   position: relative;
-  margin: 0;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  cursor: pointer;
-  text-transform: inherit;
+  display: inline-block;
+  margin-top: 14px;
 }
-.file__control .form-control .choose__btn {
-  font-size: 14px;
-  line-height: 20px;
-  color: var(--color-content);
-  background: var(--color-bg);
-  padding: 6px 12px;
-  border-radius: 4px;
-  height: 32px;
-  border: none;
-  outline: none;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 10px;
-  cursor: pointer;
-  pointer-events: none;
-}
-.file__control .preview {
-  position: relative;
-  width: 44px;
-  height: 44px;
-  border-radius: 6px;
-  border: 1px solid var(--color-border);
-  background: var(--color-white);
-}
-.file__control .preview__thumb {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 6px;
-}
-.file__control .preview__thumb img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: 5px;
-}
-.file__control .preview__thumb .remove__btn {
+.upload__preview .remove__btn {
   font-size: 14px;
   line-height: 14px;
   color: var(--color-danger);
-  background: rgba(var(--color-danger-rgb), 0.1);
-  width: 16px;
-  height: 16px;
+  background: #fef4f4;
+  border: 1px solid var(--color-white);
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -5244,16 +5175,46 @@ label .required {
   position: absolute;
   top: -6px;
   right: -6px;
-  border: none;
   outline: none;
   cursor: pointer;
-  backdrop-filter: blur(3px);
   -webkit-transition: var(--transition);
   transition: var(--transition);
+  z-index: 99;
 }
-.file__control .preview__thumb .remove__btn:hover {
+.upload__preview .remove__btn svg {
+  width: 16px;
+  height: auto;
+}
+.upload__preview .remove__btn:hover {
   background: var(--color-danger);
   color: var(--color-white);
+}
+.upload__preview .preview {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  background: #f6f6f6;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.upload__preview .preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-width: 24px;
 }
 
 /*********************************

@@ -44,7 +44,7 @@ const routes = [
         name: 'device',
         component: () => import('@/views/dashboard/device/Device.vue'),
         meta: {
-          breadcrumb: 'Devices',
+          title: 'Devices',
         },
       },
       {
@@ -52,15 +52,16 @@ const routes = [
         name: 'create-device',
         component: () => import('@/views/dashboard/device/CreateDevice.vue'),
         meta: {
-          breadcrumb: 'Create Devices',
+          title: 'Create Devices',
         },
       },
+      // Agent Routing Start
       {
         path: '/ai-agent',
         name: 'ai-agent',
         component: () => import('@/views/dashboard/ai/AiAgent.vue'),
         meta: {
-          breadcrumb: 'Ai Agent',
+          title: 'Ai Agent',
         },
       },
       {
@@ -68,7 +69,7 @@ const routes = [
         name: 'create-ai-agent',
         component: () => import('@/views/dashboard/ai/CreateAiAgent.vue'),
         meta: {
-          breadcrumb: 'Create Ai Agent',
+          breadcrumbTitle: 'Create Ai Agent',
         },
       },
 
@@ -77,7 +78,7 @@ const routes = [
         redirect: '/train-ai-agent',
         component: () => import('@/views/dashboard/ai/TrainAiAgent.vue'),
         meta: {
-          breadcrumb: 'Train Ai Agent',
+          breadcrumbTitle: 'Train Ai Agent',
         },
         children: [
           {
@@ -85,28 +86,69 @@ const routes = [
             name: 'train-ai-agent',
             component: () => import('@/views/dashboard/ai/component/Dashboard.vue'),
             meta: {
-              breadcrumb: 'Ai Dashboard',
+              breadcrumbTitle: 'Ai Dashboard',
             },
           },
-
+          // PDf Routing Start
           {
             path: '/train-ai-agent/pdf', // Note: No leading slash for child paths
             name: 'train-ai-agent-pdf',
             component: () => import('@/views/dashboard/ai/component/Pdf.vue'),
             meta: {
-              breadcrumb: 'PDF',
+              breadcrumbTitle: 'PDF',
+            },
+          },
+          {
+            path: '/train-ai-agent/pdf/add-pdf', // Note: No leading slash for child paths
+            name: 'train-ai-agent-add-pdf',
+            component: () => import('@/views/dashboard/ai/component/pdf/AddPdf.vue'),
+            meta: {
+              breadcrumbTitle: 'Add PDF',
+            },
+          },
+          {
+            path: '/train-ai-agent/pdf/edit-pdf', // Note: No leading slash for child paths
+            name: 'train-ai-agent-edit-pdf',
+            component: () => import('@/views/dashboard/ai/component/pdf/EditPdf.vue'),
+            meta: {
+              breadcrumbTitle: 'edit PDF File ',
+            },
+          },
+          // Text Routing Start
+          {
+            path: '/train-ai-agent/text-file', // Note: No leading slash for child paths
+            name: 'train-ai-agent-text-file',
+            component: () => import('@/views/dashboard/ai/component/TextFile.vue'),
+            meta: {
+              breadcrumbTitle: 'Text File',
+            },
+          },
+          {
+            path: '/train-ai-agent/text-file/add-text', // Note: No leading slash for child paths
+            name: 'train-ai-agent-add-text-file',
+            component: () => import('@/views/dashboard/ai/component/text-file/AddTextFile.vue'),
+            meta: {
+              breadcrumbTitle: 'Add Text File',
+            },
+          },
+          {
+            path: '/train-ai-agent/text-file/edit-text', // Note: No leading slash for child paths
+            name: 'train-ai-agent-edit-text-file',
+            component: () => import('@/views/dashboard/ai/component/text-file/EditTextFile.vue'),
+            meta: {
+              breadcrumbTitle: 'Edit Text File ',
             },
           },
         ],
       },
 
-      // Device Routing Start
+      // Subscription Routing Start
       {
         path: '/subscription', // Note: No leading slash for child paths
         name: 'subscription',
         component: () => import('@/views/dashboard/subscription/Subscription.vue'),
         meta: {
-          breadcrumb: 'Subscription',
+          breadcrumbTitle: 'Subscription',
         },
       },
       // Team Routing Start

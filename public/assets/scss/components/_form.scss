@@ -46,34 +46,37 @@ label {
 /*********************************
 /*  File Upload Start
 *********************************/
-.file__control {
-	display: flex;
-	align-items: center;
-	gap: 10px;
+.upload__preview {
+	position: relative;
+	display: inline-block;
+	margin-top: 14px;
 
-	.form-control {
-		position: relative;
-		margin: 0;
-		flex: 1;
+	.remove__btn {
+		font-size: 14px;
+		line-height: 14px;
+		color: var(--color-danger);
+		background: #FEF4F4;
+		border: 1px solid var(--color-white);
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		@include flexbox-center;
+		position: absolute;
+		top: -6px;
+		right: -6px;
+		outline: none;
 		cursor: pointer;
-		text-transform: inherit;
+		transition: var(--transition);
+		z-index: 99;
 
-		.choose__btn {
-			font-size: 14px;
-			line-height: 20px;
-			color: var(--color-content);
-			background: var(--color-bg);
-			padding: 6px 12px;
-			border-radius: 4px;
-			height: 32px;
-			border: none;
-			outline: none;
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			right: 10px;
-			cursor: pointer;
-			pointer-events: none;
+		svg {
+			width: 16px;
+			height: auto;
+		}
+
+		&:hover {
+			background: var(--color-danger);
+			color: var(--color-white);
 		}
 	}
 
@@ -82,47 +85,18 @@ label {
 		width: 44px;
 		height: 44px;
 		border-radius: 6px;
-		border: 1px solid var(--color-border);
-		background: var(--color-white);
+		background: #F6F6F6;
+		overflow: hidden;
+		@include flexbox-center;
 
-		&__thumb {
-			position: relative;
+		img {
 			width: 100%;
-			height: 100%;
-			border-radius: 6px;
-
-			img {
-				width: 100%;
-				height: 100%;
-				display: block;
-				object-fit: cover;
-				border-radius: 5px;
-			}
-
-			.remove__btn {
-				font-size: 14px;
-				line-height: 14px;
-				color: var(--color-danger);
-				background: rgba(var(--color-danger-rgb), 0.1);
-				width: 16px;
-				height: 16px;
-				border-radius: 50%;
-				@include flexbox-center;
-				position: absolute;
-				top: -6px;
-				right: -6px;
-				border: none;
-				outline: none;
-				cursor: pointer;
-				backdrop-filter: blur(3px);
-				transition: var(--transition);
-
-				&:hover {
-					background: var(--color-danger);
-					color: var(--color-white);
-				}
-			}
+			height: auto;
+			display: block;
+			object-fit: cover;
+			max-width: 24px;
 		}
+
 	}
 }
 

@@ -30,7 +30,7 @@
 									</router-link>
 								</li>
 								<li>
-									<router-link to="/pdf">Text File</router-link>
+									<router-link :to="{ name: 'train-ai-agent-text-file' }">Text File</router-link>
 								</li>
 								<li>
 									<router-link to="/faq">FAQ</router-link>

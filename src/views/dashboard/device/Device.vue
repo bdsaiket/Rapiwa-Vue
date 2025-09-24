@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-12">
                 <!-- Breadcrumb Start -->
-                <Breadcrumb :items="BreadcrumbItems" />
+                <Breadcrumb />
                 <!-- Breadcrumb End -->
             </div>
         </div>
@@ -163,10 +163,10 @@ import Breadcrumb from '@/components/Breadcrumb.vue';
 import SectionTitle from "@/components/SectionTitle.vue";
 
 // BreadCrumb Data
-const BreadcrumbItems = ref([
-    { icon: DashboardCircleIcon, title: 'Dashboard', to: '/dashboard' },
-    { icon: '', title: 'Devices' },
-]);
+// const BreadcrumbItems = ref([
+//     { icon: DashboardCircleIcon, title: 'Dashboard', to: '/dashboard' },
+//     { icon: '', title: 'Devices' },
+// ]);
 // Section Title Data
 const SectionTitleData = ref([
     {

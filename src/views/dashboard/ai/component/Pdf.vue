@@ -3,7 +3,7 @@
         <div class="card__header mb-3 ">
             <h4 class="title">PDF Files</h4>
             <div class="btn__group">
-                <router-link to="" class="sg-btn sg-btn-dark">Add PDF</router-link>
+                <router-link :to="{ name: 'train-ai-agent-add-pdf' }" class="sg-btn sg-btn-dark">Add PDF</router-link>
             </div>
         </div>
         <div class="card__body">
@@ -28,7 +28,7 @@
                 </div>
                 <span></span>
                 <div class="action__btn">
-                    <router-link to="" class="button">
+                    <router-link :to="{ name: 'train-ai-agent-edit-pdf' }" class="button">
                         <HugeiconsIcon :icon="Edit03Icon" />
                     </router-link>
                     <button type="button" class="button delete">
