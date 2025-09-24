@@ -2,32 +2,32 @@
 /*  Agent Sidebar Start
 *********************************/
 .agent__sidebar {
-  max-width: 167px;
+	max-width: 167px;
 
-  .sidebar__menu {
-    list-style: none;
-    gap: 4px;
+	.sidebar__menu {
+		list-style: none;
+		gap: 4px;
 
-    li {
-      a {
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: var(--font-regular);
-        color: var(--color-heading2);
-        display: block;
-        padding: 5px 12px;
-        border-radius: 8px;
-        background: var(--color-white);
-        border: 1px solid var(--color-white);
-        // transition: var(--transition);
+		li {
+			a {
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: var(--font-regular);
+				color: var(--color-heading2);
+				display: block;
+				padding: 5px 12px;
+				border-radius: 8px;
+				background: var(--color-white);
+				border: 1px solid var(--color-white);
+				// transition: var(--transition);
 
-        &.router-link-exact-active {
-          border-color: var(--color-border);
-          background: var(--color-bg);
-        }
-      }
-    }
-  }
+				&.router-link-exact-active {
+					border-color: var(--color-border);
+					background: var(--color-bg);
+				}
+			}
+		}
+	}
 }
 
 /*********************************
@@ -38,79 +38,89 @@
 /*  File Item Start
 *********************************/
 .file__item {
-  background: var(--color-white);
-  border-radius: 10px;
-  padding: 10px 10px 10px 15px;
-  border: 1px solid var(--color-border);
-  @include flexbox-between;
+	background: var(--color-white);
+	border-radius: 10px;
+	padding: 10px 10px 10px 15px;
+	border: 1px solid var(--color-border);
+	@include flexbox-between;
+	gap: 10px 15px;
+	margin-bottom: 10px;
 
-  gap: 10px;
-  margin-bottom: 10px;
+	&>div,
+	&>span {
+		flex: 1;
+	}
 
-  &:last-of-type {
-    margin-bottom: 0;
-  }
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 
-  .title__area {
-    max-width: 220px;
-    width: 100%;
-   
+	.title__area {
+		max-width: 220px;
+		width: 100%;
 
-    .title {
-    //   max-width: 220px;
-      width: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      font-weight: var(--font-regular);
-      font-size: 14px;
-      line-height: 20px;
-      color: var(--color-content);
-      text-transform: capitalize;
-      display: block;
-      margin: 0;
-    }
-  }
-  .text {
-    font-weight: var(--font-regular);
-    font-size: 14px;
-    line-height: 20px;
-    color: var(--color-content);
-  }
-  .all__badge {
-    flex: 1;
-    text-align: center;
-  }
 
-  .action__btn {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 8px;
-    flex: 1;
+		.title {
+			//   max-width: 220px;
+			width: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			font-weight: var(--font-regular);
+			font-size: 14px;
+			line-height: 20px;
+			color: var(--color-content);
+			text-transform: capitalize;
+			display: block;
+			margin: 0;
+		}
+	}
 
-    .button {
-      font-size: 14px;
-      color: var(--color-content);
-      width: 40px;
-      height: 40px;
-      background: var(--color-bg);
-      @include flexbox-center;
-      border-radius: 50%;
-      border: none;
-      outline: none;
+	.text {
+		font-weight: var(--font-regular);
+		font-size: 14px;
+		line-height: 20px;
+		color: var(--color-content);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 
-      svg {
-        width: 16px;
-        height: auto;
-      }
-    }
+	.all__badge {
+		flex: 1;
+		text-align: center;
+	}
 
-    .delete {
-      background: rgba(var(--color-danger-rgb), 0.06);
-      color: var(--color-danger);
-    }
-  }
+	.action__btn {
+		display: flex;
+		align-items: center;
+		justify-content: end;
+		gap: 8px;
+		flex: none;
+		// flex: 1;
+
+		.button {
+			font-size: 14px;
+			color: var(--color-content);
+			width: 40px;
+			height: 40px;
+			background: var(--color-bg);
+			@include flexbox-center;
+			border-radius: 50%;
+			border: none;
+			outline: none;
+
+			svg {
+				width: 16px;
+				height: auto;
+			}
+		}
+
+		.delete {
+			background: rgba(var(--color-danger-rgb), 0.06);
+			color: var(--color-danger);
+		}
+	}
 }
 
 /*********************************

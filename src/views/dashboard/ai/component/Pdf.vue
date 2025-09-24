@@ -12,7 +12,7 @@
                 <div class="title__area">
                     <h5 class="title">{{ items.id }}. {{ items.title }}</h5>
                 </div>
-                <div class="all__badge">
+                <div class="all__badge" v-if="items.status">
                     <div v-if="items.status === 'Synced'" class="badge badge-success">
                         {{ items.status }}
                     </div>
@@ -22,11 +22,9 @@
                     <div v-else-if="items.status === 'Cancel'" class="badge badge-danger">
                         {{ items.status }}
                     </div>
-                    <div v-else class="badge badge-secondary">
-                        Unknown Status
-                    </div>
+
                 </div>
-                <span></span>
+
                 <div class="action__btn">
                     <router-link :to="{ name: 'train-ai-agent-edit-pdf' }" class="button">
                         <HugeiconsIcon :icon="Edit03Icon" />

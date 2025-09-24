@@ -58,36 +58,36 @@
               </div>
               <div class="card__body">
                 <ul class="d-grid gap-2 ps-4">
-                  <li class="text-14 lw-normal text-content fw-medium">
+                  <li class="text-14 lh-normal text-content fw-medium">
                     <span class="me-1 text-heading text-capitalize">Available PDF: </span>
                     50
                   </li>
-                  <li class="text-14 lw-normal text-content fw-medium">
+                  <li class="text-14 lh-normal text-content fw-medium">
                     <span class="me-1 text-heading text-capitalize"> Available text File: </span>
                     20
                   </li>
 
-                  <li class="text-14 lw-normal text-content fw-medium">
+                  <li class="text-14 lh-normal text-content fw-medium">
                     <span class="me-1 text-heading text-capitalize"> Available FAQ: </span>
                     14
                   </li>
-                  <li class="text-14 lw-normal text-content fw-medium">
+                  <li class="text-14 lh-normal text-content fw-medium">
                     <span class="text-heading text-capitalize"> Available knowledge Base: </span>
                     6
                   </li>
-                  <li class="text-14 lw-normal text-content fw-medium">
+                  <li class="text-14 lh-normal text-content fw-medium">
                     <span class="text-heading text-capitalize"> Available Products: </span>
                     10
                   </li>
-                  <li class="text-14 lw-normal text-content fw-medium">
+                  <li class="text-14 lh-normal text-content fw-medium">
                     <span class="text-heading text-capitalize"> Available Services: </span>
                     3
                   </li>
-                  <li class="text-14 lw-normal text-content fw-medium">
+                  <li class="text-14 lh-normal text-content fw-medium">
                     <span class="text-heading text-capitalize"> Available Company Info: </span>
                     2
                   </li>
-                  <li class="text-14 lw-normal text-content fw-medium">
+                  <li class="text-14 lh-normal text-content fw-medium">
                     <span class="text-heading text-capitalize"> Predefined Replies : </span>
                     33
                   </li>
@@ -95,21 +95,14 @@
                 <form action="#" class="mt-10">
                   <div class="form-group">
                     <label>Training base model </label>
-                    <Vue3Select
-                      v-model="selected"
-                      :options="SelectAgent"
-                      class="radius-10"
-                      placeholder="GPT-5 (2025-08-25)"
-                    />
+                    <Vue3Select v-model="selected" :options="SelectAgent" class="radius-10"
+                      placeholder="GPT-5 (2025-08-25)" />
                   </div>
-                  <div class="text-14 lw-normal text-content pt-10 pb-15">
+                  <div class="text-14 lh-normal text-content pt-10 pb-15">
                     This is the base model that will be used for training. Differents models have
                     different capbilites and price points.
                   </div>
-                  <router-link
-                    :to="{ name: 'train-ai-agent' }"
-                    class="sg-btn sg-btn-dark radius-10 fw-medium"
-                  >
+                  <router-link :to="{ name: 'train-ai-agent' }" class="sg-btn sg-btn-dark radius-10 fw-medium">
                     <HugeiconsIcon :icon="AiBeautifyIcon" />
                     Re-Train & Fine-Tuning
                   </router-link>

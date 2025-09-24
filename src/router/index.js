@@ -147,6 +147,40 @@ const routes = [
               breadcrumbTitle: 'Edit Text File ',
             },
           },
+          // Product Routing Start
+          {
+            path: '/train-ai-agent/product', // Note: No leading slash for child paths
+            name: 'product',
+            component: () => import('@/views/dashboard/ai/component/Product.vue'),
+            meta: {
+              breadcrumbTitle: 'Products',
+            },
+          },
+          {
+            path: '/train-ai-agent/add-product', // Note: No leading slash for child paths
+            name: 'add-product',
+            component: () => import('@/views/dashboard/ai/component/product/AddProduct.vue'),
+            meta: {
+              breadcrumbTitle: 'Add Product',
+            },
+          },
+          {
+            path: '/train-ai-agent/view-product', // Note: No leading slash for child paths
+            name: 'view-product',
+            component: () => import('@/views/dashboard/ai/component/product/ViewProduct.vue'),
+            meta: {
+              breadcrumbTitle: 'View Product',
+            },
+          },
+          // OPen Ai Configure Routing Start
+          {
+            path: '/train-ai-agent/openai-configure', // Note: No leading slash for child paths
+            name: 'open-ai-configure',
+            component: () => import('@/views/dashboard/ai/component/OpenAiConfigure.vue'),
+            meta: {
+              breadcrumbTitle: 'Open AI Configure',
+            },
+          },
         ],
       },
 

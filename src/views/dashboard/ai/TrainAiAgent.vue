@@ -39,7 +39,7 @@
 									<router-link to="/knowledge-base">Knowledge Base</router-link>
 								</li>
 								<li>
-									<router-link to="/product">Product</router-link>
+									<router-link :to="{ name: 'product' }">Product</router-link>
 								</li>
 								<li>
 									<router-link to="/service">Service</router-link>
@@ -48,7 +48,7 @@
 									<router-link to="/company-info">Company Info</router-link>
 								</li>
 								<li>
-									<router-link to="/open-ai-configure">
+									<router-link :to="{ name: 'open-ai-configure' }">
 										Open AI Configure
 									</router-link>
 								</li>
@@ -72,22 +72,22 @@ import SectionTitle from '@/components/SectionTitle.vue'
 
 // BreadCrumb Data
 const BreadcrumbItems = ref([
-  { icon: DashboardCircleIcon, title: 'Dashboard', to: '/dashboard' },
-  { icon: '', title: 'AI Agents', to: '/ai-agent' },
-  { icon: '', title: 'Train AI Agent' },
+	{ icon: DashboardCircleIcon, title: 'Dashboard', to: '/dashboard' },
+	{ icon: '', title: 'AI Agents', to: '/ai-agent' },
+	{ icon: '', title: 'Train AI Agent' },
 ])
 
 // Section Title Data
 const SectionTitleData = ref([
-  {
-    icon: ArrowLeft02Icon,
-    to: '/ai-agent',
-    title: 'SpaGreen Sales Agent',
-    desc: 'Train AI Agent Model with your knowledge base & predefined replies content for more accurate response',
-    button_link: 'train-fine-tuning',
-    button_text: 'Train & Fine-Tuning',
-    badge: 'Last Train: 1 days ago',
-  },
+	{
+		icon: ArrowLeft02Icon,
+		to: '/ai-agent',
+		title: 'SpaGreen Sales Agent',
+		desc: 'Train AI Agent Model with your knowledge base & predefined replies content for more accurate response',
+		button_link: 'train-fine-tuning',
+		button_text: 'Train & Fine-Tuning',
+		badge: 'Last Train: 1 days ago',
+	},
 ])
 
 </script>

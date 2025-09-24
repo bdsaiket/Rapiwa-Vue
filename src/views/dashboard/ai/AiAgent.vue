@@ -22,19 +22,19 @@
 								<h4 class="title">{{ agent.agent_name }}</h4>
 							</div>
 							<div class="card__body">
-								<div class="text-14 lw-normal text-content fw-medium mb-3">
+								<div class="text-14 lh-normal text-content fw-medium mb-3">
 									<span class="me-1 text-heading text-capitalize">Team Status: </span>
 									<div class="badge badge-success">{{ agent.team_status }}</div>
 								</div>
 								<ul class="d-grid gap-2 ps-4">
-									<li class="text-14 lw-normal text-content fw-medium">{{ agent.documents.pdf }}</li>
-									<li class="text-14 lw-normal text-content fw-medium">{{ agent.documents.faq }}</li>
-									<li class="text-14 lw-normal text-content fw-medium">{{ agent.documents.text_file }}
+									<li class="text-14 lh-normal text-content fw-medium">{{ agent.documents.pdf }}</li>
+									<li class="text-14 lh-normal text-content fw-medium">{{ agent.documents.faq }}</li>
+									<li class="text-14 lh-normal text-content fw-medium">{{ agent.documents.text_file }}
 									</li>
-									<li class="text-14 lw-normal text-content fw-medium">{{ agent.documents.knowledge }}
+									<li class="text-14 lh-normal text-content fw-medium">{{ agent.documents.knowledge }}
 									</li>
 								</ul>
-								<div class="text-14 lw-normal text-content fw-medium my-2">
+								<div class="text-14 lh-normal text-content fw-medium my-2">
 									Connected WhatsApp Number:
 								</div>
 								<div class="whatsapp-list d-flex flex-wrap gap-2">

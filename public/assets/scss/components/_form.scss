@@ -1,6 +1,9 @@
 /*********************************
 /*  Form Design Start
 *********************************/
+.form-group {
+	width: 100%;
+}
 
 label {
 	font-weight: var(--font-medium);
@@ -46,10 +49,17 @@ label {
 /*********************************
 /*  File Upload Start
 *********************************/
+.upload__group {
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+}
+
 .upload__preview {
 	position: relative;
 	display: inline-block;
-	margin-top: 14px;
+	width: 44px;
+	// margin-top: 14px;
 
 	.remove__btn {
 		font-size: 14px;
