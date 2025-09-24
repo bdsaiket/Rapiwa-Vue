@@ -11,7 +11,7 @@
     <div class="card__body">
       <!-- File Item Start -->
       <div class="file__item" v-for="items in paginatedFaqData" :key="items.id">
-        <div class="">
+        <div>
           <h5 class="text-black fw-medium text-14">{{ items.id }}. {{ items.question }}</h5>
           <div class="text-14 text-content">
             <span class="text-black mr-05">Answer:</span>{{ items.answer }}
