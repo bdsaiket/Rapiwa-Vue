@@ -214,6 +214,42 @@ const routes = [
               breadcrumbTitle: 'View FAQ',
             },
           },
+          // Knowledge Base Routing Start
+          {
+            path: '/train-ai-agent/knowledge-base', // Note: No leading slash for child paths
+            name: 'train-ai-agent-knowledge-base',
+            component: () => import('@/views/dashboard/ai/component/KnowledgeBase.vue'),
+            meta: {
+              breadcrumbTitle: 'Knowledge Base',
+            },
+          },
+          {
+            path: '/train-ai-agent/knowledge-base/add-knowledge-base', // Note: No leading slash for child paths
+            name: 'train-ai-agent-add-knowledge-base',
+            component: () =>
+              import('@/views/dashboard/ai/component/knowledge-base/AddKnowledgeBase.vue'),
+            meta: {
+              breadcrumbTitle: 'Add Knowledge Base',
+            },
+          },
+          {
+            path: '/train-ai-agent/knowledge-base/edit-knowledge-base', // Note: No leading slash for child paths
+            name: 'train-ai-agent-edit-knowledge-base',
+            component: () =>
+              import('@/views/dashboard/ai/component/knowledge-base/EditKnowledgeBase.vue'),
+            meta: {
+              breadcrumbTitle: 'Edit Knowledge Base',
+            },
+          },
+          {
+            path: '/train-ai-agent/knowledge-base/view-knowledge-base', // Note: No leading slash for child paths
+            name: 'train-ai-agent-view-knowledge-base',
+            component: () =>
+              import('@/views/dashboard/ai/component/knowledge-base/ViewKnowledgeBase.vue'),
+            meta: {
+              breadcrumbTitle: 'View Knowledge Base',
+            },
+          },
         ],
       },
 
