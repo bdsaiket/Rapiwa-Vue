@@ -67,7 +67,7 @@
                 />
               </div>
             </div>
-            <div class=" col-sm-6">
+            <div class="col-sm-6">
               <div class="form-group">
                 <FileUpload class="flex-row" />
               </div>
@@ -75,7 +75,7 @@
             <div class="col-12">
               <div class="form-group">
                 <textarea class="form-control" name="ans" id="ans" rows="5">
-SpaGreen Creative is a top software company in Bangladesh. SpaGreen Creative has been providing premium software services worldwide since 2018. Web application, Android app, and iOS app development services, in particular. We enjoy tackling difficult projects. Working with a variety of businesses throughout our career has been our greatest satisfaction. We deliver excellent services to our clients as a result of our hard work.</textarea
+SpaGreen Creative provides custom software and app solutions for ecommerce, movie portal, online payment gateway, hotel booking system etc.</textarea
                 >
               </div>
             </div>
