@@ -43,7 +43,9 @@
                   <router-link to="/service">Service</router-link>
                 </li>
                 <li>
-                  <router-link to="/company-info">Company Info</router-link>
+                  <router-link :to="{ name: 'train-ai-agent-company-info' }"
+                    >Company Info</router-link
+                  >
                 </li>
                 <li>
                   <router-link :to="{ name: 'open-ai-configure' }"> Open AI Configure </router-link>
