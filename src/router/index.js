@@ -172,6 +172,40 @@ const routes = [
               breadcrumbTitle: 'View Product',
             },
           },
+          // Service Routing Start
+          {
+            path: '/train-ai-agent/service', // Note: No leading slash for child paths
+            name: 'service',
+            component: () => import('@/views/dashboard/ai/component/Services.vue'),
+            meta: {
+              breadcrumbTitle: 'Services',
+            },
+          },
+          {
+            path: '/train-ai-agent/add-service', // Note: No leading slash for child paths
+            name: 'add-service',
+            component: () => import('@/views/dashboard/ai/component/service/AddService.vue'),
+            meta: {
+              breadcrumbTitle: 'Add Service',
+            },
+          },
+          {
+            path: '/train-ai-agent/view-service', // Note: No leading slash for child paths
+            name: 'view-service',
+            component: () => import('@/views/dashboard/ai/component/service/ViewService.vue'),
+            meta: {
+              breadcrumbTitle: 'View Service',
+            },
+          },
+          // Company Info Routing Start
+          {
+            path: '/train-ai-agent/company-info', // Note: No leading slash for child paths
+            name: 'company-info',
+            component: () => import('@/views/dashboard/ai/component/CompanyInfo.vue'),
+            meta: {
+              breadcrumbTitle: 'Company Info',
+            },
+          },
           // OPen Ai Configure Routing Start
           {
             path: '/train-ai-agent/openai-configure', // Note: No leading slash for child paths

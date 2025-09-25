@@ -42,10 +42,10 @@
 									<router-link :to="{ name: 'product' }">Product</router-link>
 								</li>
 								<li>
-									<router-link to="/service">Service</router-link>
+									<router-link :to="{ name: 'service' }">Service</router-link>
 								</li>
 								<li>
-									<router-link to="/company-info">Company Info</router-link>
+									<router-link :to="{ name: 'company-info' }">Company Info</router-link>
 								</li>
 								<li>
 									<router-link :to="{ name: 'open-ai-configure' }">

@@ -2049,6 +2049,46 @@ figure {
     padding-right: 150px !important;
   }
 }
+.mw-5 {
+  max-width: 50px !important;
+}
+
+.w-5 {
+  width: 50px !important;
+}
+
+.mw-6 {
+  max-width: 60px !important;
+}
+
+.w-6 {
+  width: 60px !important;
+}
+
+.mw-7 {
+  max-width: 70px !important;
+}
+
+.w-7 {
+  width: 70px !important;
+}
+
+.mw-8 {
+  max-width: 80px !important;
+}
+
+.w-8 {
+  width: 80px !important;
+}
+
+.mw-9 {
+  max-width: 90px !important;
+}
+
+.w-9 {
+  width: 90px !important;
+}
+
 .mw-10 {
   max-width: 100px !important;
 }
@@ -5804,6 +5844,58 @@ label .required {
 .file__item:last-of-type {
   margin-bottom: 0;
 }
+.file__item .thumb {
+  position: relative;
+}
+.file__item .thumb img {
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.file__item .hours__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+@media screen and (max-width: 575px) {
+  .file__item .hours__time {
+    gap: 10px;
+  }
+}
+.file__item .hours__time span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-heading2);
+}
+.file__item .hours__time .vue-select {
+  width: 100px;
+}
+@media screen and (max-width: 575px) {
+  .file__item .hours__time .vue-select {
+    width: 90px;
+  }
+}
+.file__item .hours__time .vue-select .menu {
+  padding: 10px;
+}
+.file__item .hours__time .vue-select .menu-option {
+  white-space: nowrap;
+  padding: 6px !important;
+}
+.file__item .hours__time .vue-select .control {
+  padding: 0 9px;
+}
+.file__item .hours__time .vue-select .control .indicators-container .clear-button {
+  display: none;
+}
 .file__item .title__area {
   max-width: 220px;
   width: 100%;
@@ -5879,6 +5971,15 @@ label .required {
 .file__item .action__btn .delete {
   background: rgba(var(--color-danger-rgb), 0.06);
   color: var(--color-danger);
+}
+
+fieldset[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /*********************************

@@ -201,7 +201,7 @@ $colors: (
 }
 
 // Max Width size
-@for $i from 10 to 100 {
+@for $i from 5 to 100 {
 	.mw-#{$i} {
 		max-width: #{$i * 10+"px"} !important;
 	}

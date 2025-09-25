@@ -17,7 +17,8 @@
                 </li>
                 <li class="text-14 lh-normal text-content fw-medium">
                     <span class="me-1 text-heading text-capitalize">Product Image:</span>
-                    <img src="../../../../../../public/assets/images/user-avatar.jpg" alt="img">
+                    <img src="../../../../../../public/assets/images/user-avatar.jpg"
+                        class="mw-5 rounded d-inline-block" alt="img">
                 </li>
                 <li class="text-14 lh-normal text-content fw-medium">
                     <span class="me-1 text-heading text-capitalize">Product URL:</span>
