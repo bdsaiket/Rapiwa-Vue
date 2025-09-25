@@ -48,11 +48,11 @@
             <div class="col-sm-6">
               <div class="form-group">
                 <input
-                  type="number"
-                  name="number"
+                  type="text"
+                  name="text"
                   class="form-control"
-                  id="number"
-                  value=" +8801322-827799"
+                  id="text"
+                  value="+8801322-827799"
                 />
               </div>
             </div>
@@ -82,7 +82,7 @@ SpaGreen Creative provides custom software and app solutions for ecommerce, movi
 
             <div class="col-12">
               <div class="btn__group">
-                <button type="submit" class="sg-btn sg-btn-dark radius-10 fw-medium">Add</button>
+                <button type="submit" class="sg-btn sg-btn-dark radius-10 fw-medium">Update</button>
               </div>
             </div>
           </div>
