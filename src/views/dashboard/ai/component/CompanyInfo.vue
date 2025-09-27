@@ -116,7 +116,7 @@
     <div class="card__header mb-3">
       <h4 class="title">Achievements</h4>
       <div class="btn__group">
-        <router-link :to="{ name: '' }" class="sg-btn sg-btn-dark">Add Achievement </router-link>
+        <router-link :to="{ name: 'train-ai-agent-add-achievements' }" class="sg-btn sg-btn-dark">Add Achievement </router-link>
       </div>
     </div>
     <div class="card__body">
@@ -130,10 +130,10 @@
         </div>
         <span class="text">{{ items.member }}</span>
         <div class="action__btn">
-          <router-link :to="{ name: '' }" class="button">
+          <router-link :to="{ name: 'train-ai-agent-view-achievements' }" class="button">
             <HugeiconsIcon :icon="ViewIcon" />
           </router-link>
-          <router-link :to="{ name: '' }" class="button">
+          <router-link :to="{ name: 'train-ai-agent-add-achievements' }" class="button">
             <HugeiconsIcon :icon="Edit03Icon" />
           </router-link>
           <button type="button" class="button delete">

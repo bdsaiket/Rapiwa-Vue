@@ -318,6 +318,24 @@ const routes = [
               breadcrumbTitle: 'View Team',
             },
           },
+          {
+            path: '/train-ai-agent/company-info/add-company-info/add-achievements', // Note: No leading slash for child paths
+            name: 'train-ai-agent-add-achievements',
+            component: () =>
+              import('@/views/dashboard/ai/component/company-info/AddAchievements.vue'),
+            meta: {
+              breadcrumbTitle: 'Achievements',
+            },
+          },
+          {
+            path: '/train-ai-agent/company-info/add-company-info/view-achievements', // Note: No leading slash for child paths
+            name: 'train-ai-agent-view-achievements',
+            component: () =>
+              import('@/views/dashboard/ai/component/company-info/ViewAchievements.vue'),
+            meta: {
+              breadcrumbTitle: 'View Achievements',
+            },
+          },
         ],
       },
 
