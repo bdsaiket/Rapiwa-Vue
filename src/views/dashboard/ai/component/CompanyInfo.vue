@@ -99,6 +99,9 @@
         <span class="text">{{ items.member }}</span>
         <div class="action__btn">
           <router-link :to="{ name: '' }" class="button">
+            <HugeiconsIcon :icon="ViewIcon" />
+          </router-link>
+          <router-link :to="{ name: '' }" class="button">
             <HugeiconsIcon :icon="Edit03Icon" />
           </router-link>
           <button type="button" class="button delete">

@@ -1,9 +1,12 @@
 <template>
   <div class="card px-20 py-20 radius-16">
     <div class="card__header pb-3 mb-3 border-bottom">
-      <router-link :to="{ name: 'train-ai-agent-knowledge-base' }" class="title">
-        <HugeiconsIcon :icon="ArrowLeft02Icon" />Add Knowledge Base
-      </router-link>
+      <h4 class="title">
+        <router-link class="solid__btn" :to="{ name: 'train-ai-agent-knowledge-base' }">
+          <HugeiconsIcon :icon="ArrowLeft02Icon" :size="22" />
+        </router-link>
+        Add Knowledge Base
+      </h4>
     </div>
     <div class="card__body">
       <form action="#">
