@@ -82,7 +82,9 @@
     <div class="card__header mb-3">
       <h4 class="title">Teams</h4>
       <div class="btn__group">
-        <router-link :to="{ name: '' }" class="sg-btn sg-btn-dark">Add Team </router-link>
+        <router-link :to="{ name: 'train-ai-agent-add-team' }" class="sg-btn sg-btn-dark"
+          >Add Team
+        </router-link>
       </div>
     </div>
     <div class="card__body">

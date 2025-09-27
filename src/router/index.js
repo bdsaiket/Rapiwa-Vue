@@ -302,6 +302,14 @@ const routes = [
               breadcrumbTitle: 'Add Company Info',
             },
           },
+          {
+            path: '/train-ai-agent/company-info/add-company-info/add-team', // Note: No leading slash for child paths
+            name: 'train-ai-agent-add-team',
+            component: () => import('@/views/dashboard/ai/component/company-info/AddTeam.vue'),
+            meta: {
+              breadcrumbTitle: 'Teams',
+            },
+          },
         ],
       },
 
