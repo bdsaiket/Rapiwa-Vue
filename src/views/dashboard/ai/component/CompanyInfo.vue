@@ -98,10 +98,10 @@
         </div>
         <span class="text">{{ items.member }}</span>
         <div class="action__btn">
-          <router-link :to="{ name: '' }" class="button">
+          <router-link :to="{ name: 'train-ai-agent-view-team' }" class="button">
             <HugeiconsIcon :icon="ViewIcon" />
           </router-link>
-          <router-link :to="{ name: '' }" class="button">
+          <router-link :to="{ name: 'train-ai-agent-add-team' }" class="button">
             <HugeiconsIcon :icon="Edit03Icon" />
           </router-link>
           <button type="button" class="button delete">

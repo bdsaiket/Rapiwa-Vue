@@ -1,6 +1,6 @@
 <template>
   <div class="card px-20 py-20 radius-16">
-    <div class="card__header pb-3 mb-3 border-bottom">
+    <div class="card__header ">
       <h4 class="title">
         <router-link class="solid__btn" :to="{ name: 'train-ai-agent-faq' }">
           <HugeiconsIcon :icon="ArrowLeft02Icon" :size="22" />
