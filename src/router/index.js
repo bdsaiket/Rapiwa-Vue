@@ -389,9 +389,9 @@ const routes = [
 // Scroll behavior function
 const scrollBehavior = (to, from, savedPosition) => {
   if (savedPosition) {
-    return savedPosition // back/forward এ আগের scroll position এ ফেরত যাবে
+    return savedPosition
   } else {
-    return { top: 0 } // নতুন রাউটে গেলে উপরে স্ক্রল হবে
+    return { top: 0 }
   }
 }
 
@@ -399,7 +399,7 @@ const scrollBehavior = (to, from, savedPosition) => {
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  scrollBehavior, // <- এখানে যুক্ত করো
+  scrollBehavior,
 })
 
 export default router
