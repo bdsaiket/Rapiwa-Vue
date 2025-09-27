@@ -48,19 +48,7 @@
                         <div class="col-12">
                             <div class="form-group">
                                 <label>Upload Profile Photo</label>
-                                <div class="file__control">
-                                    <input type="file" id="fileInput1" accept="image/*" hidden="">
-                                    <label for="fileInput1" class="form-control">
-                                        <span class="file__name">No file chosen</span>
-                                        <span class="choose__btn">Choose File</span>
-                                    </label>
-                                    <div class="preview">
-                                        <div class="preview__thumb">
-                                            <img src="./../../../../public/assets/images/user-avatar.jpg" alt="Preview">
-                                            <button type="button" class="remove__btn">×</button>
-                                        </div>
-                                    </div>
-                                </div>
+                                <FileUpload class="flex-row" />
                             </div>
                         </div>
                         <div class="col-12">
@@ -82,6 +70,7 @@ import { ref, computed } from "vue";
 import Breadcrumb from '@/components/Breadcrumb.vue';
 import SectionTitle from "@/components/SectionTitle.vue";
 import { DashboardCircleIcon, ArrowLeft02Icon, Message02Icon, Pen01Icon } from '@hugeicons/core-free-icons'
+import FileUpload from "@/components/FileUpload.vue";
 
 // BreadCrumb Data
 const BreadcrumbItems = ref([

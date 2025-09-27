@@ -59,47 +59,19 @@
 											</div>
 										</a>
 										<!-- Dropdown Item -->
-										<div class="dropdown-menu w-30">
-											<div class="profile__card">
-												<div class="profile__header text-center">
-													<div class="avatar">
-														<img src="../assets/images/user/avatar-1.jpg" alt="avatar" />
-														<span class="edit__icon"><i
-																class="hgi hgi-stroke hgi-edit-02"></i></span>
-													</div>
-													<div class="content">
-														<h4>John Doe</h4>
-														<p>admin@example.com</p>
-													</div>
-												</div>
-
-												<div class="profile__options">
-													<a href="#" class="option">
-														<span class="icon">
-															<HugeiconsIcon :icon="EditUser02Icon" />
-														</span>
-														<span>Edit Profile</span>
-														<span class="arrow">
-															<HugeiconsIcon :icon="ArrowRight01Icon" />
-														</span>
-													</a>
-													<a href="#" class="option">
-														<span class="icon">
-															<HugeiconsIcon :icon="Tag01Icon" />
-														</span>
-														<span>Change Password</span>
-														<span class="arrow">
-															<HugeiconsIcon :icon="ArrowRight01Icon" />
-														</span>
-													</a>
-												</div>
-
-												<div class="logout text-center">
-													<a href="#" class="solid__btn"><i
-															class="hgi hgi-stroke hgi-logout-01"></i>Log
-														Out</a>
-												</div>
-											</div>
+										<div class="dropdown-menu">
+											<a href="#!" class="dropdown-item">
+												<HugeiconsIcon :icon="UserIcon" />
+												<span>Update Profile</span>
+											</a>
+											<a href="#!" class="dropdown-item">
+												<HugeiconsIcon :icon="Diamond02Icon" />
+												<span>Subscription</span>
+											</a>
+											<a href="#!" class="dropdown-item">
+												<HugeiconsIcon :icon="LogoutCircle01Icon" />
+												<span>Sign Out</span>
+											</a>
 										</div>
 									</div>
 								</li>
@@ -114,5 +86,5 @@
 </template>
 
 <script setup>
-import { Menu01Icon, Search01Icon, ArrowDown01Icon, ArrowRight01Icon, EditUser02Icon, Tag01Icon } from '@hugeicons/core-free-icons'
+import { ArrowDown01Icon, Diamond02Icon, LogoutCircle01Icon, Menu01Icon, Search01Icon, UserIcon } from '@hugeicons/core-free-icons/index';
 </script>

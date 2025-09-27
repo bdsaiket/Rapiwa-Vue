@@ -2,11 +2,10 @@
     <div class="card">
         <div class="card__header">
             <h2 class="title">Message Activity</h2>
-            <select name="select">
-                <option value="today">Today</option>
-                <option value="yesterday">Yesterday</option>
-                <option value="this_week">This Week</option>
-            </select>
+            <div class="mw-15 w-100">
+                <Vue3Select v-model="selected" :options="BillingCountry" placeholder="Select.." />
+
+            </div>
         </div>
         <div class="card__body">
             <!-- Message card Start -->
@@ -38,6 +37,17 @@
 import { ref } from 'vue'
 import { Message02Icon } from '@hugeicons/core-free-icons'
 
+// Vue Select
+const selected = ref(null)
+// Options for Vue Select
+const BillingCountry = ref([
+    { label: 'Today', value: 'today' },
+    { label: 'Yesterday', value: 'yesterday' },
+    { label: 'This Week', value: 'this_week' }
+])
+
+
+// Message Activity Data
 const MessagesActivityData = ref([
     {
         icon: Message02Icon,
